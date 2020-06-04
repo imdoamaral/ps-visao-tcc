@@ -1,4 +1,4 @@
-# ps_visao_tcc
+# ps_visao_tcc 🍕🍔
 Projeto realizado no ps da Visão tecnologia e sistemas.
 
 ## Como executar 🤔
@@ -15,11 +15,11 @@ Projeto realizado no ps da Visão tecnologia e sistemas.
 * [PostgreSQL](https://www.postgresql.org/) - Banco de dados a ser utilizado.
 
 
-## Versions
-VERSION 0.0
+## Versões
+VERSÃO 0.0
 * Primeira implementação teste.
 
-## Author
+## Autores
 * **Igor Vitor Vieira** - [IgorVVieira](https://github.com/IgorVViera)
 * **Guilherme Lage Albano** - [iamAlbano](https://github.com/iamAlbano)
 * **Israel Matias do Amaral** - [imdoamaral](https://github.com/imdoamaral)
