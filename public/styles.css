@@ -8,7 +8,7 @@ html, body, #home{
 }
 
 body{
-    background: white;
+    background: url(https://images.unsplash.com/photo-1541450805268-4822a3a774ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -48,12 +48,53 @@ nav.navbar-transparente{
     padding: 10px 20px;
 }
 
+/* Estrutura de conteudos
+-----------------------------*/
+#produtos{
+    background: white;
+    padding: 20px 0;
+}
+
+#produtos h2, h3{
+    color: #CB2636;
+}
+
+.album-produtos{
+    padding: 10px 0;
+}
+
+#depoimentos{
+    padding: 20px 0;
+}
+
+.card{
+    margin-bottom: 20px;
+}
+
 /* Tipografia
 ----------------------*/
 h1{
     font-weight: 900;
     letter-spacing: -0.05em;
     margin-bottom: 50px;
+}
+
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#depoimentos h2{
+    text-align: center;
+    margin-bottom: 20px;
+    
 }
 
 /* Media Queries
