@@ -8,7 +8,7 @@ html, body, #home{
 }
 
 body{
-    background: url(https://images.unsplash.com/reserve/m6rT4MYFQ7CT8j9m2AEC_JakeGivens%20-%20Sunset%20in%20the%20Park.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80);
+    background: white;
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -25,6 +25,11 @@ body{
 
 /* Barra de navegacao
 -----------------------------*/
+nav.navbar-transparente{
+    background: rgba(203, 38, 54, 0.8);
+    padding: 15px 0;
+}
+
 .navbar-light .navbar-nav .nav-link{
     color: white;
 }
@@ -43,7 +48,7 @@ body{
     padding: 10px 20px;
 }
 
-/*Tipografia
+/* Tipografia
 ----------------------*/
 h1{
     font-weight: 900;
@@ -51,7 +56,7 @@ h1{
     margin-bottom: 50px;
 }
 
-/*Media Queries
+/* Media Queries
 ------------------------*/
 
 /* Extra small devices (portrait phones, less than 576px) */
