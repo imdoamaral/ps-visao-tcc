@@ -8,25 +8,52 @@ html, body, #home{
 }
 
 body{
-    background: #F9F0DE;
+    background: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Cores
------------------------*/
-.cor-primaria{
+/* Paleta de cores (retiradas da identidade visual)
+---------------------------------------------------*/
+
+/* text */
+.text-vermelho{
+    color: #CB2636;
+}
+
+.text-laranja{
+    color: #F29744;
+}
+
+.text-marrom-escuro{
+    color: #3d2314;
+}
+
+.text-marrom-claro{
+    color: #f9f0de;
+}
+
+/* background */
+.bg-vermelho{
     background: #CB2636;
 }
 
-.cor-secundaria{
+.bg-laranja{
     background: #F29744;
+}
+
+.bg-marrom-escuro{
+    background: #3d2314;
+}
+
+.bg-marrom-claro{
+    background: #f9f0de;
 }
 
 /* Barra de navegacao
 -----------------------------*/
 nav.navbar-transparente{
-    background: rgba(203, 38, 54, 0.8);
+    background: rgba(203, 38, 54, 0.6);
     padding: 15px 0;
 }
 
@@ -53,10 +80,6 @@ nav.navbar-transparente{
 #produtos{
     background: white;
     padding: 20px 0;
-}
-
-#produtos h2, h3{
-    color: #CB2636;
 }
 
 .album-produtos{
@@ -98,7 +121,6 @@ h3{
 }
 
 #depoimentos h2{
-    color: #000;
     text-align: center;
     margin-bottom: 20px;
 }
