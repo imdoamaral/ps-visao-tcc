@@ -8,7 +8,7 @@ html, body, #home{
 }
 
 body{
-    background: url(https://images.unsplash.com/photo-1541450805268-4822a3a774ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background: #F9F0DE;
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -64,11 +64,17 @@ nav.navbar-transparente{
 }
 
 #depoimentos{
-    padding: 20px 0;
+    padding: 200px 0;
 }
 
 .card{
     margin-bottom: 20px;
+}
+
+.blockquote-footer {
+    display: block;
+    font-size: 80%;
+    color: #6c757d;
 }
 
 /* Tipografia
@@ -92,9 +98,21 @@ h3{
 }
 
 #depoimentos h2{
+    color: #000;
     text-align: center;
     margin-bottom: 20px;
-    
+}
+
+/*Rodape
+--------------------------*/
+#rodape{
+    background: #000;
+    padding: 50px 0px 20px 0px;
+}
+
+#rodape a{
+    color: #fff;
+    padding: 0 10px;
 }
 
 /* Media Queries
