@@ -15,7 +15,7 @@
     <!-- Estilo customizado -->
      <link rel="stylesheet" href="../public/cardapio.css">
 
-    <title>Cardápio - Mais Sabor</title>
+    <title>Carrinho - Mais Sabor</title>
 
     <!-- Logo da barra de enderecos do navegador -->
     <link rel="icon" href="#">
@@ -62,7 +62,7 @@
                         <li class="nav-item">
                             <a href="" class="nav-link">
                                 <i class="fas fa-shopping-cart fa-lg"></i>
-                                <span class="badge badge-secondary">0</span>
+                                <span class="badge badge-secondary">2</span>
                             </a>
                         </li>
 
@@ -77,8 +77,9 @@
         <div class="container align-self-center" id="container-home">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 style="text-align: center;">Cardápio</h2>
-                    <table class="table table-hover">
+                    <h2 style="text-align: center;">Carrinho</h2>
+
+                    <table class="table">
                         <thead>
                             <th></th>
                             <th>ID</th>
@@ -87,10 +88,11 @@
                             <th>Quant</th>
                             <th></th>
                         </thead>
+                    
                         <tbody>
 
                             <!-- produto 1 -->
-                            <tr> 
+                            <tr>
                                 <td> <!-- imagem -->
                                     <img class="img-fluid" src="https://i.picsum.photos/id/1075/200/200.jpg?hmac=a9PcCsXBonPZ7LCLyWX6dHM1XGbcojML0qhnq-Ee4a4" alt="">
                                 </td>
@@ -105,16 +107,16 @@
                                 <td> <!-- quant -->
                                     <input type="number" value="0" min="0" max="99" step="1"/>
                                 </td>
-                                <td> <!-- adicionar -->
-                                    <button class="btn btn-success">
-                                        <span>Adicionar ao carrinho</span>
-                                       <i class="fas fa-shopping-cart"></i>
+                                <td> <!-- remover -->
+                                    <button class="btn btn-danger">
+                                        <span>Remover do carrinho</span>
+                                        <i class="fas fa-trash-alt"></i>
                                     </button>
                                 </td>
                             </tr>
 
                             <!-- produto 2 -->
-                            <tr> 
+                            <tr>
                                 <td> <!-- imagem -->
                                     <img class="img-fluid" src="https://i.picsum.photos/id/651/200/200.jpg?hmac=p8_kpEZVVgCD0ruS4M5WHOZ2-VETfCi3aXmYAbav3NE" alt="">
                                 </td>
@@ -129,15 +131,46 @@
                                 <td> <!-- quant -->
                                     <input type="number" value="0" min="0" max="99" step="1"/>
                                 </td>
-                                <td> <!-- adicionar -->
-                                    <button class="btn btn-success">
-                                        <span>Adicionar ao carrinho</span>
-                                       <i class="fas fa-shopping-cart"></i>
+                                <td> <!-- remover -->
+                                    <button class="btn btn-danger">
+                                        <span>Remover do carrinho</span>
+                                        <i class="fas fa-trash-alt"></i>
                                     </button>
                                 </td>
-                            </tr>                            
+                            </tr>
+
+                            <!-- total -->
+                            <tr>
+                                <td colspan="3"></td>
+                                <td>
+                                    <h4>Total</h4>
+                                </td>
+                                <td colspan="1"></td>
+                                <td>
+                                    <h3>R$ 19,98</h3>                                   
+                                </td>
+                            </tr>
+
+                            <!-- botoes -->
+                            <tr>
+                                <td>
+                                    <button class="btn btn-success">
+                                        <span>Continuar comprando</span>
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </td>
+                                <td colspan="4"></td>
+                                <td>
+                                    <button class="btn btn-primary">
+                                        <span>Finalizar a compra</span>
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                                                         
                         </tbody>
                     </table>
+                    
                 </div>
             </div>
 
