@@ -3,14 +3,17 @@ Layout
 */
 
 html, body, #home{
-    height: 100%;
-    overflow-x: hidden;
+   overflow-x: hidden;
+   height: 100%;
 }
 
 body{
-    background: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
+}
+
+.borda{
+    border: 1px solid red;
 }
 
 /* Paleta de cores (retiradas da identidade visual)
@@ -73,38 +76,7 @@ nav.navbar-transparente{
     text-align: center;
 }
 
-.btn-custom{
-    color: white;
-    border-radius: 500px;
-    text-transform: uppercase;
-    transition: background 0.4s, color 0.4s;
-    padding: 10px 20px;
-}
-
-/* Estrutura de conteudos
------------------------------*/
-#produtos{
-    background: white;
-    padding: 20px 0;
-}
-
-.album-produtos{
-    padding: 10px 0;
-}
-
-#depoimentos{
-    padding: 200px 0;
-}
-
-.card{
-    margin-bottom: 20px;
-}
-
-.blockquote-footer {
-    display: block;
-    font-size: 80%;
-    color: #6c757d;
-}
+#container-home{}
 
 /* Tipografia
 ----------------------*/
@@ -126,11 +98,6 @@ h3{
     letter-spacing: -0.04em;
 }
 
-#depoimentos h2{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 /*Rodape
 --------------------------*/
 #rodape{
@@ -139,7 +106,7 @@ h3{
 }
 
 #rodape a{
-    color: #fff;
+    color: white;
     padding: 0 10px;
 }
 
