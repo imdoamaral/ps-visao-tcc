@@ -73,157 +73,111 @@
         </nav>
     </header> <!--/fim CABECALHO-->
 
-    <section class="d-flex" id="home"> <!-- inicio HOME -->
-        <div class="container align-self-center">
+    <section id="home"> <!-- inicio HOME -->
+        <div class="container">
             <div class="row">
 
                 <div class="col-md-12">
 
-                    <h2 style="text-align: center;">Carrinho</h2>
-                    <img class="mx-auto d-block" src="../images/black-header-seprator.png" alt="">
+                    <div class="titulo-home">
+                        <h2>Carrinho</h2>
+                        <img class="mx-auto d-block" src="../images/black-header-seprator.png" alt="">
+                    </div>
                     
-                </div>
-
-                <div class="table-reponsive">
-                    <table class="table">
-                        <thead class="table-light">
-                            <th></th>
-                            <th>ID</th>
-                            <th>Descrição</th>
-                            <th>Preço</th>
-                            <th>Quant</th>
-                            <th></th>
-                        </thead>
+                    <div class="table-reponsive-md">
+                        <table class="table">
+                            <thead class="table-light">
+                                <th></th>
+                                <th>ID</th>
+                                <th>Descrição</th>
+                                <th>Preço</th>
+                                <th>Quant</th>
+                                <th></th>
+                            </thead>
+                        
+                            <tbody>
+                
+                                <!-- produto 1 -->
+                                <tr>
+                                    <td> <!-- imagem -->
+                                        <img class="img-fluid" src="https://i.picsum.photos/id/1075/200/200.jpg?hmac=a9PcCsXBonPZ7LCLyWX6dHM1XGbcojML0qhnq-Ee4a4" alt="">
+                                    </td>
+                                    <td> <!-- ID -->
+                                        1
+                                    </td>
+                                    <td> <!-- descricao -->
+                                        <h5>Lorem ipsum dolor sit amet</h5>
+                                        <p>Adipisicing enim ad mollit dolor commodo amet anim ut ex commodo consequat magna nulla.</p>
+                                    </td> <!-- preco -->
+                                    <td>R$ 9,99</td>
+                                    <td> <!-- quant -->
+                                        <input type="number" value="0" min="0" max="99" step="1"/>
+                                    </td>
+                                    <td> <!-- remover -->
+                                        <button class="btn btn-danger">
+                                            <span>Remover do carrinho</span>
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                
+                                <!-- produto 2 -->
+                                <tr>
+                                    <td> <!-- imagem -->
+                                        <img class="img-fluid" src="https://i.picsum.photos/id/651/200/200.jpg?hmac=p8_kpEZVVgCD0ruS4M5WHOZ2-VETfCi3aXmYAbav3NE" alt="">
+                                    </td>
+                                    <td> <!-- ID -->
+                                        2
+                                    </td>
+                                    <td> <!-- descricao -->
+                                        <h5>Lorem ipsum dolor sit amet</h5>
+                                        <p>Adipisicing enim ad mollit dolor commodo amet anim ut ex commodo consequat magna nulla.</p>
+                                    </td> <!-- preco -->
+                                    <td>R$ 9,99</td>
+                                    <td> <!-- quant -->
+                                        <input type="number" value="0" min="0" max="99" step="1"/>
+                                    </td>
+                                    <td> <!-- remover -->
+                                        <button class="btn btn-danger">
+                                            <span>Remover do carrinho</span>
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                    
+                                <!-- total -->
+                                <tr>
+                                    <td colspan="3"></td>
+                                    <td>
+                                        <h4>Total</h4>
+                                    </td>
+                                    <td colspan="1"></td>
+                                    <td>
+                                        <h3>R$ 19,98</h3>                                   
+                                    </td>
+                                </tr>
+                
+                                <!-- botoes -->
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-success">
+                                            <span>Continuar comprando</span>
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                    </td>
+                                    <td colspan="4"></td>
+                                    <td>
+                                        <button class="btn btn-primary">
+                                            <span>Finalizar a compra</span>
+                                            <i class="fas fa-check"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                                             
+                            </tbody>
+                        </table>
+                    </div>
                     
-                        <tbody>
-            
-                            <!-- produto 1 -->
-                            <tr>
-                                <td> <!-- imagem -->
-                                    <img class="img-fluid" src="https://i.picsum.photos/id/1075/200/200.jpg?hmac=a9PcCsXBonPZ7LCLyWX6dHM1XGbcojML0qhnq-Ee4a4" alt="">
-                                </td>
-                                <td> <!-- ID -->
-                                    1
-                                </td>
-                                <td> <!-- descricao -->
-                                    <h5>Lorem ipsum dolor sit amet</h5>
-                                    <p>Adipisicing enim ad mollit dolor commodo amet anim ut ex commodo consequat magna nulla.</p>
-                                </td> <!-- preco -->
-                                <td>R$ 9,99</td>
-                                <td> <!-- quant -->
-                                    <input type="number" value="0" min="0" max="99" step="1"/>
-                                </td>
-                                <td> <!-- remover -->
-                                    <button class="btn btn-danger">
-                                        <span>Remover do carrinho</span>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-                                </td>
-                            </tr>
-            
-                            <!-- produto 2 -->
-                            <tr>
-                                <td> <!-- imagem -->
-                                    <img class="img-fluid" src="https://i.picsum.photos/id/651/200/200.jpg?hmac=p8_kpEZVVgCD0ruS4M5WHOZ2-VETfCi3aXmYAbav3NE" alt="">
-                                </td>
-                                <td> <!-- ID -->
-                                    2
-                                </td>
-                                <td> <!-- descricao -->
-                                    <h5>Lorem ipsum dolor sit amet</h5>
-                                    <p>Adipisicing enim ad mollit dolor commodo amet anim ut ex commodo consequat magna nulla.</p>
-                                </td> <!-- preco -->
-                                <td>R$ 9,99</td>
-                                <td> <!-- quant -->
-                                    <input type="number" value="0" min="0" max="99" step="1"/>
-                                </td>
-                                <td> <!-- remover -->
-                                    <button class="btn btn-danger">
-                                        <span>Remover do carrinho</span>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            
-                            <!-- produto 1 -->
-                            <tr>
-                                <td> <!-- imagem -->
-                                    <img class="img-fluid" src="https://i.picsum.photos/id/1075/200/200.jpg?hmac=a9PcCsXBonPZ7LCLyWX6dHM1XGbcojML0qhnq-Ee4a4" alt="">
-                                </td>
-                                <td> <!-- ID -->
-                                    1
-                                </td>
-                                <td> <!-- descricao -->
-                                    <h5>Lorem ipsum dolor sit amet</h5>
-                                    <p>Adipisicing enim ad mollit dolor commodo amet anim ut ex commodo consequat magna nulla.</p>
-                                </td> <!-- preco -->
-                                <td>R$ 9,99</td>
-                                <td> <!-- quant -->
-                                    <input type="number" value="0" min="0" max="99" step="1"/>
-                                </td>
-                                <td> <!-- remover -->
-                                    <button class="btn btn-danger">
-                                        <span>Remover do carrinho</span>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-                                </td>
-                            </tr>
-            
-                            <!-- produto 2 -->
-                            <tr>
-                                <td> <!-- imagem -->
-                                    <img class="img-fluid" src="https://i.picsum.photos/id/651/200/200.jpg?hmac=p8_kpEZVVgCD0ruS4M5WHOZ2-VETfCi3aXmYAbav3NE" alt="">
-                                </td>
-                                <td> <!-- ID -->
-                                    2
-                                </td>
-                                <td> <!-- descricao -->
-                                    <h5>Lorem ipsum dolor sit amet</h5>
-                                    <p>Adipisicing enim ad mollit dolor commodo amet anim ut ex commodo consequat magna nulla.</p>
-                                </td> <!-- preco -->
-                                <td>R$ 9,99</td>
-                                <td> <!-- quant -->
-                                    <input type="number" value="0" min="0" max="99" step="1"/>
-                                </td>
-                                <td> <!-- remover -->
-                                    <button class="btn btn-danger">
-                                        <span>Remover do carrinho</span>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-                                </td>
-                            </tr> 
-                                
-                            <!-- total -->
-                            <tr>
-                                <td colspan="3"></td>
-                                <td>
-                                    <h4>Total</h4>
-                                </td>
-                                <td colspan="1"></td>
-                                <td>
-                                    <h3>R$ 19,98</h3>                                   
-                                </td>
-                            </tr>
-            
-                            <!-- botoes -->
-                            <tr>
-                                <td>
-                                    <button class="btn btn-success">
-                                        <span>Continuar comprando</span>
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                </td>
-                                <td colspan="4"></td>
-                                <td>
-                                    <button class="btn btn-primary">
-                                        <span>Finalizar a compra</span>
-                                        <i class="fas fa-check"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                                                         
-                        </tbody>
-                    </table>
                 </div>
                 
             </div>

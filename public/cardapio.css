@@ -80,6 +80,15 @@ nav.navbar-transparente{
     text-align: center;
 }
 
+#home .titulo-home{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#home .table{
+    margin: 40px 0;
+}
+
 /* Tipografia
 ----------------------*/
 h1{
