@@ -2,9 +2,13 @@
 Layout
 */
 
-html, body, #home{
-   overflow-x: hidden;
-   height: 100%;
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#home{
+    min-height: 100%;
 }
 
 body{
