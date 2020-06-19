@@ -56,7 +56,7 @@ body{
 /* Barra de navegacao
 -----------------------------*/
 nav.navbar-transparente{
-    background: rgba(203, 38, 54, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     padding: 15px 0;
 }
 
@@ -75,8 +75,6 @@ nav.navbar-transparente{
 .capa{
     text-align: center;
 }
-
-#container-home{}
 
 /* Tipografia
 ----------------------*/

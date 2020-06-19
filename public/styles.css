@@ -13,6 +13,10 @@ body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.borda{
+    border: 1px solid red;
+}
+
 /* Paleta de cores (retiradas da identidade visual)
 ---------------------------------------------------*/
 
@@ -93,7 +97,7 @@ nav.navbar-transparente{
 }
 
 #depoimentos{
-    padding: 200px 0;
+    padding: 20px 0;
 }
 
 .card{
