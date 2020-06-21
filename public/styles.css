@@ -7,8 +7,12 @@ html, body, #home{
     overflow-x: hidden;
 }
 
+#depoimentos{
+    min-height: 100%;
+}
+
 body{
-    background: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background: white;
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -88,7 +92,7 @@ nav.navbar-transparente{
 /* Estrutura de conteudos
 -----------------------------*/
 #produtos{
-    background: white;
+    background: #f9f0de;
     padding: 20px 0;
 }
 
@@ -102,6 +106,7 @@ nav.navbar-transparente{
 
 .card{
     margin-bottom: 20px;
+    background-color: #f9f0de;
 }
 
 .blockquote-footer {
@@ -154,6 +159,10 @@ h3{
 @media (max-width: 575.98px) { 
     .btn-custom{
         margin: 10px;
+    }
+    nav.navbar-transparente{
+        padding-left: 15px;
+        padding-right: 15px;
     }
  }
 

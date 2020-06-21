@@ -80,6 +80,15 @@ nav.navbar-transparente{
     text-align: center;
 }
 
+#home .titulo-home{
+    text-align: center;
+    margin: 80px 0px 40px 0px;
+}
+
+#home .table{
+    margin: 40px 0;
+}
+
 /* Tipografia
 ----------------------*/
 h1{
@@ -119,6 +128,10 @@ h3{
 @media (max-width: 575.98px) { 
     .btn-custom{
         margin: 10px;
+    }
+    nav.navbar-transparente{
+        padding-left: 15px;
+        padding-right: 15px;
     }
  }
 
