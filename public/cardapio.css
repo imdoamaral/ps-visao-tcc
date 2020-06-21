@@ -129,6 +129,10 @@ h3{
     .btn-custom{
         margin: 10px;
     }
+    nav.navbar-transparente{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
  }
 
 /* Small devices (landscape phones, 576px and up) */
