@@ -7,8 +7,12 @@ html, body, #home{
     overflow-x: hidden;
 }
 
+#depoimentos{
+    min-height: 100%;
+}
+
 body{
-    background-color: #f9f0de;
+    background: #f9f0de;
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -23,6 +27,9 @@ body{
 /* text */
 .text-vermelho{
     color: #CB2636;
+    text-align: left;
+    font-family: chunkfive;
+    text-shadow: white 1px 1px;
 }
 
 .text-laranja{
@@ -57,12 +64,15 @@ body{
 /* Barra de navegacao
 -----------------------------*/
 nav.navbar-transparente{
-    background: rgba(203, 38, 54, 1);
+    background: rgb(203, 38, 54);
     padding: 15px 0;
 }
+
+
 .navbar-light .navbar-nav .nav-link{
     color: white;
 }
+
 
 .divisor{
     width: 1px;
@@ -76,34 +86,35 @@ nav.navbar-transparente{
     text-align: center;
 }
 
-@font-face {
+@font-face{
     font-family: chunkfive;
-     src: url('fonts/Chunkfive\ Ex.ttf');
+    src: url(fonts/Chunkfive\ Ex.ttf);
 }
 
-@font-face {
+@font-face{
     font-family: pacifico;
-    src: url('fonts/Pacifico.ttf');
+    src: url(fonts/Pacifico.ttf)
 }
 
 .btn-custom{
     color: white;
-    border-radius: 60px;
-    transition: background 0.4s, color 0.4s;
-    padding: 10px 30px;
+    border-radius: 90px;
     font-family: chunkfive;
+    text-shadow: rgba(60, 0, 0, 0.671) 1px 1px;
     font-size: 20pt;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
 }
 
-.btn-custom:hover {
-    color:white;
-    background-color: rgb(172, 6, 23)  ;
+.btn-custom:hover{
+    color: blanchedalmond;
+    background-color: rgb(230, 43, 61);
 }
 
 /* Estrutura de conteudos
 -----------------------------*/
 #produtos{
-    background: white;
+    background: #f9f0de;
     padding: 20px 0;
 }
 
@@ -117,24 +128,25 @@ nav.navbar-transparente{
 
 .card{
     margin-bottom: 20px;
+    background-color: #f9f0de;
 }
 
 .blockquote-footer {
     display: block;
     font-size: 80%;
-    color: #6c757d;
+    color: #6757;
 }
 
 /* Tipografia
 ----------------------*/
 h1{
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: -0.05em;
     margin-bottom: 50px;
 }
 
 h2{
-    font-size: 3em;
+    font-size: 2.3em;
     font-weight: 700;
     letter-spacing: -0.04em;
 }
@@ -145,28 +157,28 @@ h3{
     letter-spacing: -0.04em;
 }
 
-#depoimentos {
-    background-image: url(https://image.freepik.com/free-photo/wooden-background_24972-623.jpg);
+#clientes {
+    color: #CB2636;
+    font-family: pacifico;
+    text-shadow: rgba(60, 0, 0, 0.671) 1px 1px;
 }
 
 #depoimentos h2{
     text-align: center;
-    font-family: pacifico;
-    text-shadow: 2px 2px black;
     margin-bottom: 20px;
 }
 
 /*Rodape
 --------------------------*/
 #rodape{
-    background: #CB2636;
+    background: #CB2636; 
     padding: 40px 0px 20px 0px;
     color: #fff;
 }
 
 #rodape a{
     color: #fff;
-    padding: 0 7px;
+    padding: 0 10px;
 }
 
 /* Media Queries
@@ -176,6 +188,10 @@ h3{
 @media (max-width: 575.98px) { 
     .btn-custom{
         margin: 10px;
+    }
+    nav.navbar-transparente{
+        padding-left: 15px;
+        padding-right: 15px;
     }
  }
 
