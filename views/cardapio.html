@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/fdb2e39f6f.js" crossorigin="anonymous"></script>
 
     <!-- Estilo customizado -->
+    <link rel="stylesheet" href="../public/style.css">
      <link rel="stylesheet" href="../public/cardapio.css">
 
     <title>Cardápio - Mais Sabor</title>
@@ -24,12 +25,12 @@
 <body>
 
     <header> <!-- inicio CABECALHO-->
-        <nav class="navbar navbar-light navbar-expand-sm bg-vermelho navbar-transparente">
+        <nav class="navbar navbar-light navbar-expand-sm fixed-top bg-vermelho navbar-transparente shadow">
             <div class="container">
 
                 <!-- logo -->
                 <a href="#" class="navbar-brand">
-                    <img src="#" width="142">
+                    <img src="../public/images/logo.png" width="50">
                 </a>
 
                 <!-- menu hamburguer -->
@@ -46,17 +47,17 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quem Somos</a>
+                            <a class="nav-link" href="../views/quem-somos">Quem Somos</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="../views/contato.html">Contato</a>
                         </li>
 
                         <li class="nav-item divisor"></li><!-- divisor -->
 
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Cardápio</a>
+                        <li class="nav-item active">
+                            <a href="../views/cardapio.html" class="nav-link">Cardápio</a>
                         </li>
 
                         <li class="nav-item">
@@ -71,81 +72,108 @@
 
             </div>
         </nav>
-    </header> <!--/fim CABECALHO-->
+    </header>
 
-    <section class="d-flex" id="home"> <!-- inicio HOME -->
-        <div class="container align-self-center">
+    <section id="home"> <!-- inicio HOME -->
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
 
-                    <h2 style="text-align: center;">Cardápio</h2>
-                    <img class="mx-auto d-block" src="../images/black-header-seprator.png" alt="">
+                    <div class="titulo-home">
+                        <h2>Cardápio</h2>
+                        
+                    </div>
 
-                    <table class="table table-hover">
-                        <thead class="table-light">
-                            <th></th>
-                            <th>ID</th>
-                            <th>Descrição</th>
-                            <th>Preço</th>
-                            <th>Quant</th>
-                            <th></th>
-                        </thead>
-                        <tbody>
+                    <div class="table-responsive-md">
+                        <table class="table table-hover">
+                            <thead class="table-light">
+                                <th></th>
+                                <th>ID</th>
+                                <th>Descrição</th>
+                                <th>Preço</th>
+                                <th>Quant</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+    
+                                <!-- produto 1 -->
+                                <tr> 
+                                    <td> <!-- imagem -->
+                                        <img class="img-fluid" src="../public/images/calabresa.png" alt="Calabresa" width="60%">
+                                    </td>
+                                    <td> <!-- ID -->
+                                        1
+                                    </td>
+                                    <td> <!-- descricao -->
+                                        <h5>Pizza de Calabresa</h5>
+                                        <p>Calabresa, Mussarela e Cebola</p>
+                                    </td> <!-- preco -->
+                                    <td>R$24,99</td>
+                                    <td> <!-- quant -->
+                                        <input type="number" value="0" min="0" max="99" step="1"/>
+                                    </td>
+                                    <td> <!-- adicionar -->
+                                        <button class="btn btn-success">
+                                            <span>Adicionar ao carrinho</span>
+                                           <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+    
+                                <!-- produto 2 -->
+                                <tr> 
+                                    <td> <!-- imagem -->
+                                        <img class="img-fluid" src="../public/images/presunto.png" alt="Presunto" width="60%">
+                                    </td>
+                                    <td> <!-- ID -->
+                                        2
+                                    </td>
+                                    <td> <!-- descricao -->
+                                        <h5>Pizza de Presunto</h5>
+                                        <p>Presunto, mussarela e orégano</p>
+                                    </td> <!-- preco -->
+                                    <td>R$23,99</td>
+                                    <td> <!-- quant -->
+                                        <input type="number" value="0" min="0" max="99" step="1"/>
+                                    </td>
+                                    <td> <!-- adicionar -->
+                                        <button class="btn btn-success">
+                                            <span>Adicionar ao carrinho</span>
+                                           <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                    </td>
+                                </tr>
 
-                            <!-- produto 1 -->
-                            <tr> 
-                                <td> <!-- imagem -->
-                                    <img class="img-fluid" src="https://i.picsum.photos/id/1075/200/200.jpg?hmac=a9PcCsXBonPZ7LCLyWX6dHM1XGbcojML0qhnq-Ee4a4" alt="">
-                                </td>
-                                <td> <!-- ID -->
-                                    1
-                                </td>
-                                <td> <!-- descricao -->
-                                    <h5>Lorem ipsum dolor sit amet</h5>
-                                    <p>Adipisicing enim ad mollit dolor commodo amet anim ut ex commodo consequat magna nulla.</p>
-                                </td> <!-- preco -->
-                                <td>R$ 9,99</td>
-                                <td> <!-- quant -->
-                                    <input type="number" value="0" min="0" max="99" step="1"/>
-                                </td>
-                                <td> <!-- adicionar -->
-                                    <button class="btn btn-success">
-                                        <span>Adicionar ao carrinho</span>
-                                       <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <!-- produto 2 -->
-                            <tr> 
-                                <td> <!-- imagem -->
-                                    <img class="img-fluid" src="https://i.picsum.photos/id/651/200/200.jpg?hmac=p8_kpEZVVgCD0ruS4M5WHOZ2-VETfCi3aXmYAbav3NE" alt="">
-                                </td>
-                                <td> <!-- ID -->
-                                    2
-                                </td>
-                                <td> <!-- descricao -->
-                                    <h5>Lorem ipsum dolor sit amet</h5>
-                                    <p>Adipisicing enim ad mollit dolor commodo amet anim ut ex commodo consequat magna nulla.</p>
-                                </td> <!-- preco -->
-                                <td>R$ 9,99</td>
-                                <td> <!-- quant -->
-                                    <input type="number" value="0" min="0" max="99" step="1"/>
-                                </td>
-                                <td> <!-- adicionar -->
-                                    <button class="btn btn-success">
-                                        <span>Adicionar ao carrinho</span>
-                                       <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                                                        
-                        </tbody>
-                    </table>
+                                 <!-- produto 3 -->
+                                 <tr> 
+                                    <td> <!-- imagem -->
+                                        <img class="img-fluid" src="../public/images/mussarela.png" alt="Presunto" width="60%">
+                                    </td>
+                                    <td> <!-- ID -->
+                                        3
+                                    </td>
+                                    <td> <!-- descricao -->
+                                        <h5>Pizza de Mussarela</h5>
+                                        <p>Mussarela, tomate e azeitona</p>
+                                    </td> <!-- preco -->
+                                    <td>R$23,99</td>
+                                    <td> <!-- quant -->
+                                        <input type="number" value="0" min="0" max="99" step="1"/>
+                                    </td>
+                                    <td> <!-- adicionar -->
+                                        <button class="btn btn-success">
+                                            <span>Adicionar ao carrinho</span>
+                                           <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                                            
+                            </tbody>
+                        </table>
+                    </div>
+                    
                 </div>
-            </div>
-
-            
+            </div>        
 
         </div>
     </section> <!--/fim HOME -->
@@ -175,7 +203,6 @@
             </div>
         </div>
     </footer> <!--/fim RODAPE -->
-
 
 
      
