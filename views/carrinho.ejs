@@ -1,80 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <!-- Meta tags necessarias ao funcionamento do bootstrap -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/fdb2e39f6f.js" crossorigin="anonymous"></script>
-
-    <!-- Estilo customizado -->
-    <link rel="stylesheet" href="../public/cardapio.css">
-
-    <title>Carrinho - Mais Sabor</title>
-
-    <!-- Logo da barra de enderecos do navegador -->
-    <link rel="icon" href="#">
-</head>
+<%- include ('partials/head.ejs') %>
 
 <body>
 
-    <header>
-        <!-- inicio CABECALHO-->
-        <nav class="navbar navbar-light navbar-expand-sm bg-vermelho navbar-transparente shadow">
-            <div class="container">
-
-                <!-- logo -->
-                <a href="#" class="navbar-brand">
-                    <img src="../public/images/logo.png" width="50">
-                </a>
-
-                <!-- menu hamburguer -->
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- menu navegacao -->
-                <div class="collapse navbar-collapse" id="nav-principal">
-                    <ul class="navbar-nav ml-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Quem Somos</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
-
-                        <li class="nav-item divisor"></li><!-- divisor -->
-
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Cardápio</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="" class="nav-link active">
-                                <i class="fas fa-shopping-cart fa-lg"></i>
-                                <span class="badge badge-secondary">2</span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
-        </nav>
-    </header>
-    <!--/fim CABECALHO-->
+    <%- include ('partials/header.ejs') %>
 
     <section id="home">
         <!-- inicio HOME -->
