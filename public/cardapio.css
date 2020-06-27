@@ -40,6 +40,16 @@ body{
     color: #f9f0de;
 }
 
+@font-face{
+    font-family: chunkfive;
+    src: url(fonts/Chunkfive\ Ex.ttf);
+}
+
+@font-face{
+    font-family: pacifico;
+    src: url(fonts/Pacifico.ttf);
+}
+
 /* background */
 .bg-vermelho{
     background: #CB2636;
@@ -101,6 +111,11 @@ nav.navbar-transparente{
 .text{
     text-align: justify;
     padding-bottom: 5%;
+}
+
+.td-img{
+    width: 180px;
+    height: 180px;
 }
 
 /* Tipografia
