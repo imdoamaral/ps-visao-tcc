@@ -2,7 +2,57 @@
 
 <body>
 
-    <%- include ('partials/header.ejs') %>
+    <header>
+        <!-- inicio CABECALHO-->
+        <nav class="navbar navbar-light navbar-expand-md fixed-top bg-vermelho navbar-transparente shadow">
+            <div class="container">
+    
+                <!-- logo -->
+                <a href="#" class="navbar-brand">
+                    <img src="/images/logo.png" width="100">
+                </a>
+    
+                <!-- menu hamburguer -->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- menu navegacao -->
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+    
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">Home</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="/quem_somos">Quem Somos</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contato">Contato</a>
+                        </li>
+    
+                        <li class="nav-item divisor"></li><!-- divisor -->
+    
+                        <li class="nav-item">
+                            <a href="/cardapio" class="nav-link">Cardápio</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="fas fa-shopping-cart fa-lg"></i>
+                                <span class="badge badge-secondary">0</span>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+            </div>
+        </nav>
+    </header>
+    <!--/fim CABECALHO-->
 
     <section class="d-flex" id="home">
         <!-- inicio HOME -->
@@ -10,7 +60,9 @@
             <div class="row capa">
 
                 <div class="col-md-12">
-                    <h1><img src="/images/logo.png" width="30%"></h1>
+                    <div style="margin-bottom: 50px;">
+                        <img src="/images/logo.png" width="45%">
+                    </div>
                     <a href="#" class="btn btn-lg btn-custom bg-vermelho">
                         faça já seu pedido
                     </a>
@@ -66,7 +118,7 @@
                         <i class="fas fa-wifi fa-xs"></i>
                     </h3>
                     <p>
-                        Aqui ninguém fica desconectado. Wi-fi liberado para você tirar aquela selfie e postar no Insta !
+                        Aqui ninguém fica desconectado. Wi-fi liberado para você tirar aquela selfie e postar no Insta!
                     </p>
 
                     <h3 class="text-vermelho">Cerveja estupidamente gelada
@@ -74,14 +126,14 @@
                     </h3>
                     <p>
                         Se tem comida boa, não pode faltar cerveja gelada. E aqui no restaurante Mais Sabor, cerveja é o
-                        que não falta !
+                        que não falta!
                     </p>
 
                     <h3 class="text-vermelho">Música da melhor qualidade
                         <i class="fas fa-guitar fa-xs"></i>
                     </h3>
                     <p>
-                        E para animar a sua noite, música ao vivo ! Os melhores artistas da região você encontra aqui.
+                        E para animar a sua noite, música ao vivo! Os melhores artistas da região você encontra aqui.
                     </p>
                 </div>
             </div>
@@ -101,11 +153,11 @@
                     <div class="card p-3 text-right shadow">
                         <blockquote class="blockquote mb-0">
                             <p>
-                                A melhor pizza da região !
+                                A melhor pizza da region!
                             </p>
                             <footer class="blockquote-footer">
                                 <small class="text-muted">
-                                    Beatriz Batista
+                                    Érick Jacquin
                                 </small>
                             </footer>
                         </blockquote>
@@ -121,7 +173,7 @@
                             </p>
                             <footer class="blockquote-footer">
                                 <small class="text-muted">
-                                    José Ricardo
+                                    Aquele cara
                                 </small>
                             </footer>
                         </blockquote>
@@ -131,7 +183,7 @@
                     <div class="card p-3 text-right shadow">
                         <blockquote class="blockquote mb-0">
                             <p>
-                                Foi um prazer tocar lá !
+                                Foi um prazer tocar lá!
                             </p>
                             <footer class="blockquote-footer">
                                 <small class="text-muted">
@@ -147,7 +199,7 @@
                     <div class="card p-3 text-right shadow">
                         <blockquote class="blockquote mb-0">
                             <p>
-                                O X-Tudo realmente tem TUDO !!
+                                O X-Tudo realmente tem TUDO!!
                             </p>
                             <footer class="blockquote-footer">
                                 <small class="text-muted">
@@ -162,6 +214,7 @@
         </div>
     </section>
     <!--/fim DEPOIMENTOS -->
+    
     <%- include ('partials/footer.ejs') %>
 </body>
 
