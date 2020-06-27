@@ -14,7 +14,6 @@
     <script src="https://kit.fontawesome.com/fdb2e39f6f.js" crossorigin="anonymous"></script>
 
     <!-- Estilo customizado -->
-    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./cardapio.css">
 
     <title> Mais Sabor</title>
@@ -44,7 +43,7 @@
                                 <th></th>
                                 <th>ID</th>
                                 <th>Descrição</th>
-                                <th>Preço</th>
+                                <th>Tamanho</th>
                                 <th>Quant</th>
                                 <th></th>
                             </thead>
@@ -52,9 +51,9 @@
 
                                 <!-- produto 1 -->
                                 <tr>
-                                    <td>
+                                    <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/calabresa.png" alt="Calabresa" width="40%">
+                                        <img class="img-fluid" src="/images/calabresa.png" alt="Calabresa">
                                     </td>
                                     <td>
                                         <!-- ID -->
@@ -64,11 +63,19 @@
                                         <!-- descricao -->
                                         <h5>Pizza de Calabresa</h5>
                                         <p>Calabresa, mussarela e cebola</p>
-                                    </td> <!-- preco -->
-                                    <td>R$24,99</td>
+                                    </td> 
+                                    <td>
+                                        <!-- preco -->
+                                        <select class="custom-select custom-select">
+                                            <option selected>...</option>
+                                            <option value="1">P - R$ 19,99</option>
+                                            <option value="2">M - R$ 29,99</option>
+                                            <option value="3">G - R$ 39,99</option>
+                                          </select>
+                                    </td>
                                     <td>
                                         <!-- quant -->
-                                        <input type="number" value="0" min="0" max="99" step="1" />
+                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -81,9 +88,9 @@
 
                                 <!-- produto 2 -->
                                 <tr>
-                                    <td>
+                                    <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/presunto.png" alt="Presunto" width="40%">
+                                        <img class="img-fluid" src="/images/presunto.png" alt="Presunto">
                                     </td>
                                     <td>
                                         <!-- ID -->
@@ -93,11 +100,19 @@
                                         <!-- descricao -->
                                         <h5>Pizza de Presunto</h5>
                                         <p>Presunto, mussarela e orégano</p>
-                                    </td> <!-- preco -->
-                                    <td>R$23,99</td>
+                                    </td>
+                                    <td>
+                                        <!-- preco -->
+                                        <select class="custom-select custom-select">
+                                            <option selected>...</option>
+                                            <option value="1">P - R$ 19,99</option>
+                                            <option value="2">M - R$ 29,99</option>
+                                            <option value="3">G - R$ 39,99</option>
+                                          </select>
+                                    </td>
                                     <td>
                                         <!-- quant -->
-                                        <input type="number" value="0" min="0" max="99" step="1" />
+                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -110,9 +125,9 @@
 
                                 <!-- produto 3 -->
                                 <tr>
-                                    <td>
+                                    <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/mussarela.png" alt="Mussarela" width="40%">
+                                        <img class="img-fluid" src="/images/mussarela.png" alt="Mussarela">
                                     </td>
                                     <td>
                                         <!-- ID -->
@@ -122,11 +137,19 @@
                                         <!-- descricao -->
                                         <h5>Pizza de Mussarela</h5>
                                         <p>Mussarela, tomate e azeitona</p>
-                                    </td> <!-- preco -->
-                                    <td>R$23,99</td>
+                                    </td>
+                                    <td>
+                                        <!-- preco -->
+                                        <select class="custom-select custom-select">
+                                            <option selected>...</option>
+                                            <option value="1">P - R$ 19,99</option>
+                                            <option value="2">M - R$ 29,99</option>
+                                            <option value="3">G - R$ 39,99</option>
+                                          </select>
+                                    </td>
                                     <td>
                                         <!-- quant -->
-                                        <input type="number" value="0" min="0" max="99" step="1" />
+                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -136,11 +159,12 @@
                                         </button>
                                     </td>
                                 </tr>
+                                
                                 <!-- produto 4 -->
                                 <tr>
-                                    <td>
+                                    <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/mista.png" alt="Mista" width="40%">
+                                        <img class="img-fluid" src="/images/mista.png" alt="Mista">
                                     </td>
                                     <td>
                                         <!-- ID -->
@@ -150,11 +174,19 @@
                                         <!-- descricao -->
                                         <h5>Pizza Mista</h5>
                                         <p>Calabresa, mussarela, presunto e orégano</p>
-                                    </td> <!-- preco -->
-                                    <td>R$24,99</td>
+                                    </td>
+                                    <td>
+                                        <!-- preco -->
+                                        <select class="custom-select custom-select">
+                                            <option selected>...</option>
+                                            <option value="1">P - R$ 19,99</option>
+                                            <option value="2">M - R$ 29,99</option>
+                                            <option value="3">G - R$ 39,99</option>
+                                          </select>
+                                    </td>
                                     <td>
                                         <!-- quant -->
-                                        <input type="number" value="0" min="0" max="99" step="1" />
+                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -167,10 +199,9 @@
 
                                 <!-- produto 5 -->
                                 <tr>
-                                    <td>
+                                    <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/margherita.png" alt="Margherita"
-                                            width="40%">
+                                        <img class="img-fluid" src="/images/margherita.png" alt="Margherita">
                                     </td>
                                     <td>
                                         <!-- ID -->
@@ -180,11 +211,19 @@
                                         <!-- descricao -->
                                         <h5>Margherita</h5>
                                         <p>mussarela, tomate, parmesão, manjericão e orégano</p>
-                                    </td> <!-- preco -->
-                                    <td>R$24,99</td>
+                                    </td>
+                                    <td>
+                                        <!-- preco -->
+                                        <select class="custom-select custom-select">
+                                            <option selected>...</option>
+                                            <option value="1">P - R$ 19,99</option>
+                                            <option value="2">M - R$ 29,99</option>
+                                            <option value="3">G - R$ 39,99</option>
+                                          </select>
+                                    </td>
                                     <td>
                                         <!-- quant -->
-                                        <input type="number" value="0" min="0" max="99" step="1" />
+                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -197,9 +236,9 @@
 
                                 <!-- produto 6 -->
                                 <tr>
-                                    <td>
+                                    <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/pepperoni.png" alt="Pepperoni" width="40%">
+                                        <img class="img-fluid" src="/images/pepperoni.png" alt="Pepperoni">
                                     </td>
                                     <td>
                                         <!-- ID -->
@@ -209,11 +248,19 @@
                                         <!-- descricao -->
                                         <h5>Pizza de Pepperoni</h5>
                                         <p>Mussarela, pepperoni e orégano</p>
-                                    </td> <!-- preco -->
-                                    <td>R$23,99</td>
+                                    </td>
+                                    <td>
+                                        <!-- preco -->
+                                        <select class="custom-select custom-select">
+                                            <option selected>...</option>
+                                            <option value="1">P - R$ 19,99</option>
+                                            <option value="2">M - R$ 29,99</option>
+                                            <option value="3">G - R$ 39,99</option>
+                                          </select>
+                                    </td>
                                     <td>
                                         <!-- quant -->
-                                        <input type="number" value="0" min="0" max="99" step="1" />
+                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -226,9 +273,9 @@
 
                                 <!-- produto 7 -->
                                 <tr>
-                                    <td>
+                                    <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/2q.png" alt="Queijos" width="40%">
+                                        <img class="img-fluid" src="/images/2q.png" alt="Queijos">
                                     </td>
                                     <td>
                                         <!-- ID -->
@@ -238,11 +285,19 @@
                                         <!-- descricao -->
                                         <h5>Pizza de 3 Queijos</h5>
                                         <p>Mussarela, catupiry, parmesão e orégano</p>
-                                    </td> <!-- preco -->
-                                    <td>R$24,99</td>
+                                    </td>
+                                    <td>
+                                        <!-- preco -->
+                                        <select class="custom-select custom-select">
+                                            <option selected>...</option>
+                                            <option value="1">P - R$ 19,99</option>
+                                            <option value="2">M - R$ 29,99</option>
+                                            <option value="3">G - R$ 39,99</option>
+                                          </select>
+                                    </td>
                                     <td>
                                         <!-- quant -->
-                                        <input type="number" value="0" min="0" max="99" step="1" />
+                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -255,9 +310,9 @@
 
                                 <!-- produto 8 -->
                                 <tr>
-                                    <td>
+                                    <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/alho.png" alt="Alho" width="40%">
+                                        <img class="img-fluid" src="/images/alho.png" alt="Alho">
                                     </td>
                                     <td>
                                         <!-- ID -->
@@ -267,11 +322,19 @@
                                         <!-- descricao -->
                                         <h5>Pizza de Alho e cebola</h5>
                                         <p>Mussarela, alho, cebola e orégano</p>
-                                    </td> <!-- preco -->
-                                    <td>R$23,99</td>
+                                    </td>
+                                    <td>
+                                        <!-- preco -->
+                                        <select class="custom-select custom-select">
+                                            <option selected>...</option>
+                                            <option value="1">P - R$ 19,99</option>
+                                            <option value="2">M - R$ 29,99</option>
+                                            <option value="3">G - R$ 39,99</option>
+                                          </select>
+                                    </td>
                                     <td>
                                         <!-- quant -->
-                                        <input type="number" value="0" min="0" max="99" step="1" />
+                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -284,10 +347,9 @@
 
                                 <!-- produto 9 -->
                                 <tr>
-                                    <td>
+                                    <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/napolitana.png" alt="Napolitana"
-                                            width="40%">
+                                        <img class="img-fluid" src="/images/napolitana.png" alt="Napolitana">
                                     </td>
                                     <td>
                                         <!-- ID -->
@@ -297,11 +359,19 @@
                                         <!-- descricao -->
                                         <h5>Napolitana</h5>
                                         <p>Mussarela, tomate e orégano</p>
-                                    </td> <!-- preco -->
-                                    <td>R$23,99</td>
+                                    </td>
+                                    <td>
+                                        <!-- preco -->
+                                        <select class="custom-select custom-select">
+                                            <option selected>...</option>
+                                            <option value="1">P - R$ 19,99</option>
+                                            <option value="2">M - R$ 29,99</option>
+                                            <option value="3">G - R$ 39,99</option>
+                                          </select>
+                                    </td>
                                     <td>
                                         <!-- quant -->
-                                        <input type="number" value="0" min="0" max="99" step="1" />
+                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -311,11 +381,12 @@
                                         </button>
                                     </td>
                                 </tr>
+
                                 <!-- produto 10 -->
                                 <tr>
-                                    <td>
+                                    <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/.png" alt="Burger" width="30%">
+                                        <img class="img-fluid" src="/images/.png" alt="Burger">
                                     </td>
                                     <td>
                                         <!-- ID -->
@@ -371,9 +442,9 @@
 
                                 <!-- produto 12 -->
                                 <tr>
-                                    <td>
+                                    <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/.png" alt="X-Bacon" width="35%">
+                                        <img class="img-fluid" src="/images/.png" alt="X-Bacon">
                                     </td>
                                     <td>
                                         <!-- ID -->
@@ -397,6 +468,7 @@
                                         </button>
                                     </td>
                                 </tr>
+
                                 <!-- produto 13 -->
                                 <tr>
                                     <td>
