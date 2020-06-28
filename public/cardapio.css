@@ -158,12 +158,32 @@ h3{
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+
     .btn-custom{
         margin: 10px;
     }
+
     nav.navbar-transparente{
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    table, thead, tbody, th, td, tr
+    {
+        display: block;
+    }
+
+    thead tr
+    {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tr
+    {
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
     }
  }
 
