@@ -12,13 +12,26 @@ html, body, #home{
 }
 
 body{
-    background: #f9f0de;
+    background: url(https://images.unsplash.com/photo-1561758033-d89a9ad46330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
 }
 
 .borda{
     border: 1px solid red;
+}
+
+/* Fontes adicionais
+--------------------------------------------------*/
+
+@font-face{
+    font-family: chunkfive;
+    src: url(fonts/Chunkfive\ Ex.ttf);
+}
+
+@font-face{
+    font-family: pacifico;
+    src: url(fonts/Pacifico.ttf)
 }
 
 /* Paleta de cores (retiradas da identidade visual)
@@ -65,14 +78,12 @@ body{
 -----------------------------*/
 nav.navbar-transparente{
     background: rgb(203, 38, 54);
-    padding: 15px 0;
+    padding: 5px 0;
 }
-
 
 .navbar-light .navbar-nav .nav-link{
     color: white;
 }
-
 
 .divisor{
     width: 1px;
@@ -86,16 +97,6 @@ nav.navbar-transparente{
     text-align: center;
 }
 
-@font-face{
-    font-family: chunkfive;
-    src: url(fonts/Chunkfive\ Ex.ttf);
-}
-
-@font-face{
-    font-family: pacifico;
-    src: url(fonts/Pacifico.ttf)
-}
-
 .btn-custom{
     color: white;
     border-radius: 90px;
@@ -107,8 +108,13 @@ nav.navbar-transparente{
 }
 
 .btn-custom:hover{
-    color: blanchedalmond;
-    background-color: rgb(230, 43, 61);
+    color: white;
+    background: #3d2314;
+}
+
+.btn-roxo:hover{
+    background: #6207e3;
+    color: white;
 }
 
 /* Estrutura de conteudos
@@ -140,20 +146,20 @@ nav.navbar-transparente{
 /* Tipografia
 ----------------------*/
 h1{
-    font-weight: 600;
+    font-weight: normal;
     letter-spacing: -0.05em;
     margin-bottom: 50px;
 }
 
 h2{
-    font-size: 2.3em;
-    font-weight: 700;
+    font-size: 3em;
+    font-weight: normal;
     letter-spacing: -0.04em;
 }
 
 h3{
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 1.8em;
+    font-weight: normal;
     letter-spacing: -0.04em;
 }
 
@@ -172,7 +178,7 @@ h3{
 --------------------------*/
 #rodape{
     background: #CB2636; 
-    padding: 40px 0px 20px 0px;
+    padding: 43px 0px 23px 0px;
     color: #fff;
 }
 

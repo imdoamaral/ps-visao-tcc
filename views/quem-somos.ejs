@@ -1,8 +1,80 @@
-<%- include ('partials/head.ejs') %>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags necessarias ao funcionamento do bootstrap -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fdb2e39f6f.js" crossorigin="anonymous"></script>
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" href="./cardapio.css">
+
+    <title> Quem somos - Mais Sabor</title>
+
+    <!-- Logo da barra de enderecos do navegador -->
+    <link rel="icon" href="/images/logo.png">
+</head>
 
 <body>
 
-    <%- include ('partials/header.ejs') %>
+    <header>
+        <!-- inicio CABECALHO-->
+        <nav class="navbar navbar-light navbar-expand-md fixed-top bg-vermelho navbar-transparente shadow">
+            <div class="container">
+    
+                <!-- logo -->
+                <a href="#" class="navbar-brand">
+                    <img src="/images/logo.png" width="100">
+                </a>
+    
+                <!-- menu hamburguer -->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- menu navegacao -->
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/quem_somos">Quem Somos</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contato">Contato</a>
+                        </li>
+    
+                        <li class="nav-item divisor"></li><!-- divisor -->
+    
+                        <li class="nav-item">
+                            <a href="/cardapio" class="nav-link">Cardápio</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="fas fa-shopping-cart fa-lg"></i>
+                                <span class="badge badge-secondary">0</span>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+            </div>
+        </nav>
+    </header>
+    <!--/fim CABECALHO-->
 
     <section id="home">
         <!-- inicio HOME -->
@@ -20,11 +92,11 @@
             </div>
 
             <div class="row">
-                <div class="subtitle">
+                <div class="subtitle font-italic">
                     <p>
                         Eleito o melhor restaurante da cidade por 3 anos seguidos, a Mais Sabor tem orgulho de servir a
-                        população de João Monlevade desde 1999. Buscando inovar e se destacar no ramo alimentício,
-                        sempre pensando sempre no melhor para nossos clientes
+                        população de João Monlevade desde 1999, buscando inovar e se destacar no ramo alimentício,
+                        sempre pensando sempre no melhor para nossos clientes.
                     </p>
                 </div>
             </div>
@@ -33,7 +105,7 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <i class="far fa-eye"></i>
+                    <i class="far fa-eye text-vermelho"></i>
                     <h5>Olhar visionário</h5>
                     <p class="text">
                         Visando inovar e trazer novidades à nossos clientes, nós do restaurante Mais Sabor estamos
@@ -42,7 +114,7 @@
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-chart-line text-vermelho"></i>
                     <h5>Crescimento no mercado</h5>
                     <p class="text">
                         Servindo João Monlevade desde 1999, o restaurante Mais Sabor está em alta crescente no mercado,
@@ -51,7 +123,7 @@
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <i class="far fa-gem"></i>
+                    <i class="far fa-gem text-vermelho"></i>
                     <h5>Nossos valores</h5>
                     <p class="text">
                         Priorizamos sempre o bom atendimento e comodidade à nossos clientes, oferecemos todo o conforto
@@ -64,6 +136,7 @@
 
     </section>
     <!--/fim HOME -->
+
     <%- include ('partials/footer.ejs') %>
 </body>
 

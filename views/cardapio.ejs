@@ -16,15 +16,65 @@
     <!-- Estilo customizado -->
     <link rel="stylesheet" href="./cardapio.css">
 
-    <title> Mais Sabor</title>
+    <title> Cardápio - Mais Sabor</title>
 
     <!-- Logo da barra de enderecos do navegador -->
-    <link rel="icon" href="#">
+    <link rel="icon" href="/images/logo.png">
 </head>
 
 <body>
 
-    <%- include ('partials/header.ejs') %>
+    <header>
+        <!-- inicio CABECALHO-->
+        <nav class="navbar navbar-light navbar-expand-md fixed-top bg-vermelho navbar-transparente shadow">
+            <div class="container">
+    
+                <!-- logo -->
+                <a href="#" class="navbar-brand">
+                    <img src="/images/logo.png" width="100">
+                </a>
+    
+                <!-- menu hamburguer -->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- menu navegacao -->
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="/quem_somos">Quem Somos</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contato">Contato</a>
+                        </li>
+    
+                        <li class="nav-item divisor"></li><!-- divisor -->
+    
+                        <li class="nav-item">
+                            <a href="/cardapio" class="nav-link active">Cardápio</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="fas fa-shopping-cart fa-lg"></i>
+                                <span class="badge badge-secondary">0</span>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+            </div>
+        </nav>
+    </header>
+    <!--/fim CABECALHO-->
 
     <section id="home">
         <!-- inicio HOME -->
@@ -37,13 +87,13 @@
 
                     </div>
 
-                    <div class="table-responsive-md">
+                    <div class="table-responsive">
                         <table class="table table-hover">
                             <thead class="table-light">
                                 <th></th>
                                 <th>ID</th>
                                 <th>Descrição</th>
-                                <th>Tamanho</th>
+                                <th>Preço</th>
                                 <th>Quant</th>
                                 <th></th>
                             </thead>
@@ -75,7 +125,7 @@
                                     </td>
                                     <td>
                                         <!-- quant -->
-                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
+                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -112,7 +162,7 @@
                                     </td>
                                     <td>
                                         <!-- quant -->
-                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
+                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -149,7 +199,7 @@
                                     </td>
                                     <td>
                                         <!-- quant -->
-                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
+                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -186,7 +236,7 @@
                                     </td>
                                     <td>
                                         <!-- quant -->
-                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
+                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -223,7 +273,7 @@
                                     </td>
                                     <td>
                                         <!-- quant -->
-                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
+                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -260,7 +310,7 @@
                                     </td>
                                     <td>
                                         <!-- quant -->
-                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
+                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -297,7 +347,7 @@
                                     </td>
                                     <td>
                                         <!-- quant -->
-                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
+                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -334,7 +384,7 @@
                                     </td>
                                     <td>
                                         <!-- quant -->
-                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
+                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -371,7 +421,7 @@
                                     </td>
                                     <td>
                                         <!-- quant -->
-                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1"/>
+                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -400,7 +450,7 @@
                                     <td>R$9,99</td>
                                     <td>
                                         <!-- quant -->
-                                        <input type="number" value="0" min="0" max="99" step="1" />
+                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1" />
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -429,7 +479,7 @@
                                     <td>R$12,99</td>
                                     <td>
                                         <!-- quant -->
-                                        <input type="number" value="0" min="0" max="99" step="1" />
+                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1" />
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -458,7 +508,7 @@
                                     <td>R$13,99</td>
                                     <td>
                                         <!-- quant -->
-                                        <input type="number" value="0" min="0" max="99" step="1" />
+                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1" />
                                     </td>
                                     <td>
                                         <!-- adicionar -->
@@ -487,7 +537,7 @@
                                     <td>R$15,99</td>
                                     <td>
                                         <!-- quant -->
-                                        <input type="number" value="0" min="0" max="99" step="1" />
+                                        <input class="form-control" type="number" value="0" min="0" max="99" step="1" />
                                     </td>
                                     <td>
                                         <!-- adicionar -->
