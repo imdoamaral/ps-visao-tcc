@@ -20,6 +20,27 @@
 
     <!-- Logo da barra de enderecos do navegador -->
     <link rel="icon" href="/images/logo.png">
+    
+    <script>
+        function incrementaBadge() {
+            var badge = document.getElementById('badge-cont').innerHTML
+
+            badge++
+
+            document.getElementById('badge-cont').innerHTML = badge
+        }
+
+        function decrementaBadge() {
+            var badge = document.getElementById('badge-cont').innerHTML
+            
+            if(badge>=1) {
+                badge--
+            }
+
+            document.getElementById('badge-cont').innerHTML = badge
+        }
+    </script>
+
 </head>
 
 <body>
@@ -64,7 +85,7 @@
                         <li class="nav-item">
                             <a href="" class="nav-link">
                                 <i class="fas fa-shopping-cart fa-lg"></i>
-                                <span class="badge badge-secondary">0</span>
+                                <span id="badge-cont" class="badge badge-secondary">0</span>
                             </a>
                         </li>
     
@@ -129,7 +150,7 @@
                                     </td>
                                     <td>
                                         <!-- adicionar -->
-                                        <button class="btn btn-success btn-lg">
+                                        <button onclick="incrementaBadge()" class="btn btn-success btn-lg">
                                             <span>Adicionar ao carrinho</span>
                                             <i class="fas fa-shopping-cart"></i>
                                         </button>
@@ -166,7 +187,7 @@
                                     </td>
                                     <td>
                                         <!-- adicionar -->
-                                        <button class="btn btn-success btn-lg">
+                                        <button onclick="incrementaBadge()" class="btn btn-success btn-lg">
                                             <span>Adicionar ao carrinho</span>
                                             <i class="fas fa-shopping-cart"></i>
                                         </button>
