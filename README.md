@@ -1,5 +1,9 @@
+<h1 align="center">
+    <img src="public/images/screenshot.png">
+</h1>
+
 # ps_visao_tcc 🍕🍔
-Projeto realizado no ps da Visão tecnologia e sistemas.
+Projeto realizado no processo seletivo da Visão Tecnologia e Sistemas (2020).
 
 ## Como executar 🤔
 ```
