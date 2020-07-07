@@ -1,6 +1,6 @@
-<h1 align="center">
-    <img src="public/images/screenshot.png">
-</h1>
+## Prévia
+
+<img src="public/images/screenshot.png">
 
 # ps_visao_tcc 🍕🍔
 Projeto realizado no processo seletivo da Visão Tecnologia e Sistemas (2020).
