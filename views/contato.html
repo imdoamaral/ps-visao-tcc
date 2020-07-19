@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/fdb2e39f6f.js" crossorigin="anonymous"></script>
 
     <!-- Estilo customizado -->
-    <link rel="stylesheet" href="./cardapio.css">
+    <link rel="stylesheet" href="../public/cardapio.css">
 
     <title> Contato - Mais Sabor</title>
 
@@ -30,8 +30,8 @@
             <div class="container">
     
                 <!-- logo -->
-                <a href="#" class="navbar-brand">
-                    <img src="/images/logo.png" width="100">
+                <a href="index.html" class="navbar-brand">
+                    <img src="../public/images/logo.png" width="100">
                 </a>
     
                 <!-- menu hamburguer -->
@@ -44,25 +44,25 @@
                     <ul class="navbar-nav ml-auto">
     
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
     
                         <li class="nav-item">
-                            <a class="nav-link" href="/quem_somos">Quem Somos</a>
+                            <a class="nav-link" href="quem-somos.html">Quem Somos</a>
                         </li>
     
                         <li class="nav-item">
-                            <a class="nav-link active" href="/contato">Contato</a>
+                            <a class="nav-link active" href="contato.html">Contato</a>
                         </li>
     
                         <li class="nav-item divisor"></li><!-- divisor -->
     
                         <li class="nav-item">
-                            <a href="/cardapio" class="nav-link">Cardápio</a>
+                            <a href="cardapio.html" class="nav-link">Cardápio</a>
                         </li>
     
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="carrinho.html" class="nav-link">
                                 <i class="fas fa-shopping-cart fa-lg"></i>
                                 <span class="badge badge-secondary">0</span>
                             </a>
@@ -85,7 +85,7 @@
 
                     <div class="titulo-home">
                         <h2>Contato</h2>
-                        <img src="images/red-header-seprator.png" alt="">
+                        <img src="../public/images/red-header-seprator.png" alt="">
                     </div>
 
                 </div>
@@ -168,7 +168,36 @@
     </section>
     <!--/fim HOME -->
     
-    <%- include ('partials/footer.ejs') %>
+    <footer id="rodape">
+        <!-- inicio RODAPE -->
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-md-8">
+                    <span class="text-white-50 d-none d-md-block" style="font-size: 0.9em;">
+                        &copy; 2020 - Equipe TCC (Todos Contra o Corona)
+                    </span>
+                </div>
+    
+                <div class="col-md-4 d-flex justify-content-end">
+                    <a href="#">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="#" class="ml-2">
+                        <i class="fab fa-twitter fa-lg cor-principal"></i>
+                    </a>
+                    <a href="#" class="ml-2">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="#" class="ml-2">
+                        <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/fim RODAPE -->
+
 </body>
 
 </html>

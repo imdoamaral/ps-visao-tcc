@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/fdb2e39f6f.js" crossorigin="anonymous"></script>
 
     <!-- Estilo customizado -->
-    <link rel="stylesheet" href="./cardapio.css">
+    <link rel="stylesheet" href="../public/cardapio.css">
 
     <title> Cardápio - Mais Sabor</title>
 
@@ -51,8 +51,8 @@
             <div class="container">
     
                 <!-- logo -->
-                <a href="#" class="navbar-brand">
-                    <img src="/images/logo.png" width="100">
+                <a href="index.html" class="navbar-brand">
+                    <img src="../public/images/logo.png" width="100">
                 </a>
     
                 <!-- menu hamburguer -->
@@ -65,25 +65,25 @@
                     <ul class="navbar-nav ml-auto">
     
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
     
                         <li class="nav-item">
-                            <a class="nav-link" href="/quem_somos">Quem Somos</a>
+                            <a class="nav-link" href="quem-somos.html">Quem Somos</a>
                         </li>
     
                         <li class="nav-item">
-                            <a class="nav-link" href="/contato">Contato</a>
+                            <a class="nav-link" href="contato.html">Contato</a>
                         </li>
     
                         <li class="nav-item divisor"></li><!-- divisor -->
     
                         <li class="nav-item">
-                            <a href="/cardapio" class="nav-link active">Cardápio</a>
+                            <a href="cardapio.html" class="nav-link active">Cardápio</a>
                         </li>
     
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="carrinho.html" class="nav-link">
                                 <i class="fas fa-shopping-cart fa-lg"></i>
                                 <span id="badge-cont" class="badge badge-secondary">0</span>
                             </a>
@@ -105,7 +105,7 @@
 
                     <div class="titulo-home">
                         <h2>Cardápio</h2>
-                        <img src="images/red-header-seprator.png" alt="">
+                        <img src="../public/images/red-header-seprator.png" alt="">
                     </div>
 
                     <div class="table-responsive">
@@ -124,7 +124,7 @@
                                 <tr>
                                     <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/calabresa.png" alt="Calabresa">
+                                        <img class="img-fluid" src="../public/images/calabresa.png" alt="Calabresa">
                                     </td>
                                     <td class="d-none d-sm-block">
                                         <!-- ID -->
@@ -161,7 +161,7 @@
                                 <tr>
                                     <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/presunto.png" alt="Presunto">
+                                        <img class="img-fluid" src="../public/images/presunto.png" alt="Presunto">
                                     </td>
                                     <td class="d-none d-sm-block">
                                         <!-- ID -->
@@ -198,7 +198,7 @@
                                 <tr>
                                     <td class="td-img">
                                         <!-- imagem -->
-                                        <img class="img-fluid" src="/images/mussarela.png" alt="Mussarela">
+                                        <img class="img-fluid" src="../public/images/mussarela.png" alt="Mussarela">
                                     </td>
                                     <td class="d-none d-sm-block">
                                         <!-- ID -->
@@ -230,228 +230,6 @@
                                         </button>
                                     </td>
                                 </tr>
-                                
-                                <!-- produto 4 -->
-                                <tr>
-                                    <td class="td-img">
-                                        <!-- imagem -->
-                                        <img class="img-fluid" src="/images/mista.png" alt="Mista">
-                                    </td>
-                                    <td class="d-none d-sm-block">
-                                        <!-- ID -->
-                                        4
-                                    </td>
-                                    <td>
-                                        <!-- descricao -->
-                                        <h5>Pizza Mista</h5>
-                                        <p>Calabresa, mussarela, presunto e orégano</p>
-                                    </td>
-                                    <td>
-                                        <!-- preco -->
-                                        <select class="custom-select custom-select">
-                                            <option selected>Selecione o tamanho</option>
-                                            <option value="1">P - R$ 19,99</option>
-                                            <option value="2">M - R$ 29,99</option>
-                                            <option value="3">G - R$ 39,99</option>
-                                          </select>
-                                    </td>
-                                    <td>
-                                        <!-- quant -->
-                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
-                                    </td>
-                                    <td>
-                                        <!-- adicionar -->
-                                        <button class="btn btn-success btn-lg">
-                                            <span>Adicionar ao carrinho</span>
-                                            <i class="fas fa-shopping-cart"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-
-                                <!-- produto 5 -->
-                                <tr>
-                                    <td class="td-img">
-                                        <!-- imagem -->
-                                        <img class="img-fluid" src="/images/margherita.png" alt="Margherita">
-                                    </td>
-                                    <td class="d-none d-sm-block">
-                                        <!-- ID -->
-                                        5
-                                    </td>
-                                    <td>
-                                        <!-- descricao -->
-                                        <h5>Margherita</h5>
-                                        <p>mussarela, tomate, parmesão, manjericão e orégano</p>
-                                    </td>
-                                    <td>
-                                        <!-- preco -->
-                                        <select class="custom-select custom-select">
-                                            <option selected>Selecione o tamanho</option>
-                                            <option value="1">P - R$ 19,99</option>
-                                            <option value="2">M - R$ 29,99</option>
-                                            <option value="3">G - R$ 39,99</option>
-                                          </select>
-                                    </td>
-                                    <td>
-                                        <!-- quant -->
-                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
-                                    </td>
-                                    <td>
-                                        <!-- adicionar -->
-                                        <button class="btn btn-success btn-lg">
-                                            <span>Adicionar ao carrinho</span>
-                                            <i class="fas fa-shopping-cart"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-
-                                <!-- produto 6 -->
-                                <tr>
-                                    <td class="td-img">
-                                        <!-- imagem -->
-                                        <img class="img-fluid" src="/images/pepperoni.png" alt="Pepperoni">
-                                    </td>
-                                    <td>
-                                        <!-- ID -->
-                                        6
-                                    </td>
-                                    <td>
-                                        <!-- descricao -->
-                                        <h5>Pizza de Pepperoni</h5>
-                                        <p>Mussarela, pepperoni e orégano</p>
-                                    </td>
-                                    <td>
-                                        <!-- preco -->
-                                        <select class="custom-select custom-select">
-                                            <option selected>...</option>
-                                            <option value="1">P - R$ 19,99</option>
-                                            <option value="2">M - R$ 29,99</option>
-                                            <option value="3">G - R$ 39,99</option>
-                                          </select>
-                                    </td>
-                                    <td>
-                                        <!-- quant -->
-                                        <input type="number" value="1" min="0" max="99" step="1"/>
-                                    </td>
-                                    <td>
-                                        <!-- adicionar -->
-                                        <button class="btn btn-success">
-                                            <span>Adicionar ao carrinho</span>
-                                            <i class="fas fa-shopping-cart"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-
-                                <!-- produto 7 -->
-                                <tr>
-                                    <td class="td-img">
-                                        <!-- imagem -->
-                                        <img class="img-fluid" src="/images/2q.png" alt="Queijos">
-                                    </td>
-                                    <td>
-                                        <!-- ID -->
-                                        7
-                                    </td>
-                                    <td>
-                                        <!-- descricao -->
-                                        <h5>Pizza de 3 Queijos</h5>
-                                        <p>Mussarela, catupiry, parmesão e orégano</p>
-                                    </td>
-                                    <td>
-                                        <!-- preco -->
-                                        <select class="custom-select custom-select">
-                                            <option selected>...</option>
-                                            <option value="1">P - R$ 19,99</option>
-                                            <option value="2">M - R$ 29,99</option>
-                                            <option value="3">G - R$ 39,99</option>
-                                          </select>
-                                    </td>
-                                    <td>
-                                        <!-- quant -->
-                                        <input type="number" value="1" min="0" max="99" step="1"/>
-                                    </td>
-                                    <td>
-                                        <!-- adicionar -->
-                                        <button class="btn btn-success">
-                                            <span>Adicionar ao carrinho</span>
-                                            <i class="fas fa-shopping-cart"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-
-                                <!-- produto 8 -->
-                                <tr>
-                                    <td class="td-img">
-                                        <!-- imagem -->
-                                        <img class="img-fluid" src="/images/alho.png" alt="Alho">
-                                    </td>
-                                    <td>
-                                        <!-- ID -->
-                                        8
-                                    </td>
-                                    <td>
-                                        <!-- descricao -->
-                                        <h5>Pizza de Alho e cebola</h5>
-                                        <p>Mussarela, alho, cebola e orégano</p>
-                                    </td>
-                                    <td>
-                                        <!-- preco -->
-                                        <select class="custom-select custom-select">
-                                            <option selected>...</option>
-                                            <option value="1">P - R$ 19,99</option>
-                                            <option value="2">M - R$ 29,99</option>
-                                            <option value="3">G - R$ 39,99</option>
-                                          </select>
-                                    </td>
-                                    <td>
-                                        <!-- quant -->
-                                        <input type="number" value="1" min="0" max="99" step="1"/>
-                                    </td>
-                                    <td>
-                                        <!-- adicionar -->
-                                        <button class="btn btn-success">
-                                            <span>Adicionar ao carrinho</span>
-                                            <i class="fas fa-shopping-cart"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-
-                                <!-- produto 9 -->
-                                <tr>
-                                    <td class="td-img">
-                                        <!-- imagem -->
-                                        <img class="img-fluid" src="/images/napolitana.png" alt="Napolitana">
-                                    </td>
-                                    <td>
-                                        <!-- ID -->
-                                        9
-                                    </td>
-                                    <td>
-                                        <!-- descricao -->
-                                        <h5>Napolitana</h5>
-                                        <p>Mussarela, tomate e orégano</p>
-                                    </td>
-                                    <td>
-                                        <!-- preco -->
-                                        <select class="custom-select custom-select">
-                                            <option selected>...</option>
-                                            <option value="1">P - R$ 19,99</option>
-                                            <option value="2">M - R$ 29,99</option>
-                                            <option value="3">G - R$ 39,99</option>
-                                          </select>
-                                    </td>
-                                    <td>
-                                        <!-- quant -->
-                                        <input type="number" value="1" min="0" max="99" step="1"/>
-                                    </td>
-                                    <td>
-                                        <!-- adicionar -->
-                                        <button class="btn btn-success">
-                                            <span>Adicionar ao carrinho</span>
-                                            <i class="fas fa-shopping-cart"></i>
-                                        </button>
-                                    </td>
-                                </tr>
 
                             </tbody>
                         </table>
@@ -464,7 +242,36 @@
     </section>
     <!--/fim HOME -->
 
-    <%- include ('partials/footer.ejs') %>
+    <footer id="rodape">
+        <!-- inicio RODAPE -->
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-md-8">
+                    <span class="text-white-50 d-none d-md-block" style="font-size: 0.9em;">
+                        &copy; 2020 - Equipe TCC (Todos Contra o Corona)
+                    </span>
+                </div>
+    
+                <div class="col-md-4 d-flex justify-content-end">
+                    <a href="#">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="#" class="ml-2">
+                        <i class="fab fa-twitter fa-lg cor-principal"></i>
+                    </a>
+                    <a href="#" class="ml-2">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="#" class="ml-2">
+                        <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/fim RODAPE -->
+
 </body>
 
 </html>
