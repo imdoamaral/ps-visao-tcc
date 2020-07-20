@@ -22,11 +22,22 @@ class Pizza {
 Functions
 */
 
-function addPizza() {
+function addPizza(sabor) {
 
-    let tipo = document.getElementById('tipo')
-    let preco = document.getElementById('preco')
-    let quant = document.getElementById('quant')
+    let num = null
+    
+    switch(sabor) {
+        case 'produto1': num = '1'
+            break
+        case 'produto2': num = '2'
+            break
+        case 'produto3': num = '3'
+            break
+    }
+
+    let tipo = document.getElementById('tipo_'+num)
+    let preco = document.getElementById('preco_'+num)
+    let quant = document.getElementById('quant_'+num)
     
     let pizza = new Pizza(
         tipo.innerHTML,
