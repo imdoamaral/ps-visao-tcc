@@ -3,7 +3,8 @@ Classes
 */
 
 class Pizza {
-    constructor(tipo, preco, quant) {
+    constructor(img, tipo, preco, quant) {
+        this.img = img
         this.tipo = tipo
         this.preco = preco
         this.quant = quant
@@ -22,11 +23,14 @@ class Pizza {
 Functions
 */
 
-function addPizza(sabor) {
+let img = document.getElementById('img_1').src 
+console.log(img)
+
+function addPizza(produto) {
 
     let num = null
     
-    switch(sabor) {
+    switch(produto) {
         case 'produto1': num = '1'
             break
         case 'produto2': num = '2'
@@ -35,11 +39,13 @@ function addPizza(sabor) {
             break
     }
 
+    let img = document.getElementById('img_'+num)
     let tipo = document.getElementById('tipo_'+num)
     let preco = document.getElementById('preco_'+num)
     let quant = document.getElementById('quant_'+num)
     
     let pizza = new Pizza(
+        img.src,
         tipo.innerHTML,
         preco.value,
         quant.value
@@ -47,7 +53,7 @@ function addPizza(sabor) {
 
     if(pizza.validarDados()) {
 
-        alert('Dados validos')
+        alert('Pedido adicionado ao carrinho!')
         incrementaBadge(parseInt(quant.value))
         console.log(pizza)
 
@@ -55,7 +61,7 @@ function addPizza(sabor) {
         quant.value = 1
 
     } else {
-        alert('Dados invalidos')
+        alert('Erro! Verifique se todos os campos foram preenchidos corretamente.')
     }
 }
 
