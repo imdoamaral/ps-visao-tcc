@@ -19,27 +19,9 @@
     <title> Cardápio - Mais Sabor</title>
 
     <!-- Logo da barra de enderecos do navegador -->
-    <link rel="icon" href="/images/logo.png">
+    <link rel="icon" href="../public/images/logo.png">
     
-    <script>
-        function incrementaBadge() {
-            var badge = document.getElementById('badge-cont').innerHTML
-
-            badge++
-
-            document.getElementById('badge-cont').innerHTML = badge
-        }
-
-        function decrementaBadge() {
-            var badge = document.getElementById('badge-cont').innerHTML
-            
-            if(badge>=1) {
-                badge--
-            }
-
-            document.getElementById('badge-cont').innerHTML = badge
-        }
-    </script>
+    <script src="script.js"></script>
 
 </head>
 
@@ -132,20 +114,20 @@
                                     </td> 
                                     <td>
                                         <!-- preco -->
-                                        <select class="custom-select custom-select">
-                                            <option selected>Selecione o tamanho</option>
-                                            <option value="1">P - R$ 19,99</option>
-                                            <option value="2">M - R$ 29,99</option>
-                                            <option value="3">G - R$ 39,99</option>
+                                        <select id="preco" class="custom-select custom-select">
+                                            <option selected value="">Selecione o tamanho</option>
+                                            <option value="19.99">P - R$ 19,99</option>
+                                            <option value="29.99">M - R$ 29,99</option>
+                                            <option value="39.99">G - R$ 39,99</option>
                                           </select>
                                     </td>
                                     <td>
                                         <!-- quant -->
-                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
+                                        <input id="quant" class="form-control" type="number" value="1" min="1" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
-                                        <button onclick="incrementaBadge()" class="btn btn-success btn-lg">
+                                        <button onclick="addPizza('calabresa')" class="btn btn-success btn-lg">
                                             <span>Adicionar ao carrinho</span>
                                             <i class="fas fa-shopping-cart"></i>
                                         </button>
@@ -165,20 +147,20 @@
                                     </td>
                                     <td>
                                         <!-- preco -->
-                                        <select class="custom-select custom-select">
-                                            <option selected>Selecione o tamanho</option>
-                                            <option value="1">P - R$ 19,99</option>
-                                            <option value="2">M - R$ 29,99</option>
-                                            <option value="3">G - R$ 39,99</option>
+                                        <select id="preco" class="custom-select custom-select">
+                                            <option selected value="">Selecione o tamanho</option>
+                                            <option value="19.99">P - R$ 19,99</option>
+                                            <option value="29.99">M - R$ 29,99</option>
+                                            <option value="39.99">G - R$ 39,99</option>
                                           </select>
                                     </td>
                                     <td>
                                         <!-- quant -->
-                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
+                                        <input id="quant" class="form-control" type="number" value="1" min="1" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
-                                        <button onclick="incrementaBadge()" class="btn btn-success btn-lg">
+                                        <button onclick="addPizza('presunto')" class="btn btn-success btn-lg">
                                             <span>Adicionar ao carrinho</span>
                                             <i class="fas fa-shopping-cart"></i>
                                         </button>
@@ -198,20 +180,20 @@
                                     </td>
                                     <td>
                                         <!-- preco -->
-                                        <select class="custom-select custom-select">
-                                            <option selected>Selecione o tamanho</option>
-                                            <option value="1">P - R$ 19,99</option>
-                                            <option value="2">M - R$ 29,99</option>
-                                            <option value="3">G - R$ 39,99</option>
+                                        <select id="preco" class="custom-select custom-select">
+                                            <option selected value="">Selecione o tamanho</option>
+                                            <option value="19.99">P - R$ 19,99</option>
+                                            <option value="29.99">M - R$ 29,99</option>
+                                            <option value="39.99">G - R$ 39,99</option>
                                           </select>
                                     </td>
                                     <td>
                                         <!-- quant -->
-                                        <input class="form-control" type="number" value="1" min="0" max="99" step="1"/>
+                                        <input id="quant" class="form-control" type="number" value="1" min="1" max="99" step="1"/>
                                     </td>
                                     <td>
                                         <!-- adicionar -->
-                                        <button class="btn btn-success btn-lg">
+                                        <button onclick="addPizza('mussarela')" class="btn btn-success btn-lg">
                                             <span>Adicionar ao carrinho</span>
                                             <i class="fas fa-shopping-cart"></i>
                                         </button>
