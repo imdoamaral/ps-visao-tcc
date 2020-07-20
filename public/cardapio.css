@@ -97,7 +97,7 @@ nav.navbar-transparente{
     text-align: center;
     font-family: pacifico;
     color: rgb(203, 38, 54);
-    margin: 180px 0px 45px 0px;
+    margin: 180px 0px 90px 0px;
     text-shadow: black 1px 1px;
 }
 
@@ -118,6 +118,17 @@ nav.navbar-transparente{
     height: 180px;
 }
 
+#home a:hover {
+    text-decoration: none;
+    color: #CB2636
+}
+
+#home a {
+    color:#000;
+    font-family: chunkfive;
+    font-size: 2em;
+    text-transform: uppercase;
+}
 /* Tipografia
 ----------------------*/
 h1{
