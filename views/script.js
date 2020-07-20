@@ -22,24 +22,14 @@ class Pizza {
 Functions
 */
 
-function addPizza(sabor) {
+function addPizza() {
 
-    let tipo = null
-
-    switch(sabor) {
-        case 'calabresa' : tipo = 'Pizza de Calabresa'
-            break
-        case 'presunto' : tipo = 'Pizza de Presunto'
-            break
-        case 'mussarela' : tipo = 'Pizza de Mussarela'
-            break
-    }
-
+    let tipo = document.getElementById('tipo')
     let preco = document.getElementById('preco')
     let quant = document.getElementById('quant')
     
     let pizza = new Pizza(
-        tipo,
+        tipo.innerHTML,
         preco.value,
         quant.value
     )
@@ -55,7 +45,6 @@ function addPizza(sabor) {
 
     } else {
         alert('Dados invalidos')
-        console.log(pizza)
     }
 }
 
