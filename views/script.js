@@ -19,12 +19,36 @@ class Pizza {
     }
 }
 
+class Bd {
+    constructor() {
+        let id = localStorage.getItem('id') //recupera o id
+
+        if (id === null) {
+            localStorage.setItem('id', 0) //inicia um valor para id caso este nao exista
+        }
+    }
+
+    gravarPizza(pizza) {
+        let id = localStorage.getItem('id') //recupera o id
+        id = parseInt(id) + 1 //incrementa o valor contido no indice
+
+        localStorage.setItem('id', id) //atualiza o 'id' com o id incrementado
+
+        localStorage.setItem(id, JSON.stringify(pizza)) //armazena o obj pizza no indice id
+    }
+
+    gravarBadge(badge) {
+        //cria uma chave (key) chamada 'badge'
+        //atribui a essa key o valor passado como parametro        
+        localStorage.setItem('badge', badge)
+    }
+}
+
+let bd = new Bd()
+
 /*
 Functions
 */
-
-let img = document.getElementById('img_1').src 
-console.log(img)
 
 function addPizza(produto) {
 
@@ -53,6 +77,8 @@ function addPizza(produto) {
 
     if(pizza.validarDados()) {
 
+        bd.gravarPizza(pizza)
+
         alert('Pedido adicionado ao carrinho!')
         incrementaBadge(parseInt(quant.value))
         console.log(pizza)
@@ -72,6 +98,8 @@ function incrementaBadge(quant) {
     badge += quant
 
     document.getElementById('badge-cont').innerHTML = badge
+
+    bd.gravarBadge(badge)
 }
 
 function decrementaBadge(quant) {
