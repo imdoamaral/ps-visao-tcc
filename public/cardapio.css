@@ -129,6 +129,11 @@ nav.navbar-transparente{
     font-size: 2em;
     text-transform: uppercase;
 }
+
+#tipo_cardapio {
+    border-left: 5px solid #CB2636;
+}
+
 /* Tipografia
 ----------------------*/
 h1{
