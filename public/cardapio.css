@@ -123,7 +123,7 @@ nav.navbar-transparente{
     color: #CB2636
 }
 
-#home a {
+.link-cardapio {
     color:#000;
     font-family: chunkfive;
     font-size: 2em;
