@@ -118,7 +118,7 @@ nav.navbar-transparente{
     height: 180px;
 }
 
-#home a:hover {
+#home .link-cardapio:hover {
     text-decoration: none;
     color: #CB2636
 }
