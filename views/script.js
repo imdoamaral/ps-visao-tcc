@@ -290,6 +290,8 @@ function carregaListaPizzas() {
     
     linhaBotoes.insertCell(2).append(btn_finalizarCompra)
 
+    carregaBadge()
+
 }
 
 function carregaBadge() {
@@ -299,8 +301,6 @@ function carregaBadge() {
 
     document.getElementById('badge-cont').innerHTML = badge
 }
-
-carregaBadge()
 
 function incrementaBadge(quant) {
     let badge = document.getElementById('badge-cont').innerHTML
