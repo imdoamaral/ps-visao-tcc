@@ -240,7 +240,7 @@ function carregaListaPizzas() {
         linhaTotal.insertCell(2).append(h4)
 
         let h3 = document.createElement('h3')
-        h3.innerText = `R$ ${total}`  
+        h3.innerText = `R$ ${total.toFixed(2)}`  
         linhaTotal.insertCell(3).append(h3)
 
     //inserindo botoes
