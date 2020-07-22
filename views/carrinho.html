@@ -21,9 +21,6 @@
     <!-- Logo da barra de enderecos do navegador -->
     <link rel="icon" href="../public/images/logo.png">
 
-    <!-- Javascript -->
-    <script src="script.js"></script>
-
 </head>
 
 <body onload="carregaListaPizzas()">
@@ -68,7 +65,7 @@
                         <li class="nav-item">
                             <a href="carrinho.html" class="nav-link active">
                                 <i class="fas fa-shopping-cart fa-lg"></i>
-                                <span class="badge badge-secondary"></span>
+                                <span id="badge-cont" class="badge badge-secondary">0</span>
                             </a>
                         </li>
     
@@ -157,5 +154,8 @@
     <!--/fim RODAPE -->
 
 </body>
+
+<!-- Javascript -->
+<script src="script.js"></script>
 
 </html>
