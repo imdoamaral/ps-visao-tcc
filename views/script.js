@@ -46,6 +46,11 @@ class Bd {
         localStorage.setItem('badge', badge) //armazena o valor de badge no indice 'badge'
     }
 
+    recuperarBadge() {
+        let badge = localStorage.getItem('badge')
+        return badge
+    }
+
     recuperarTodosRegistros() {
 
         //cria um array de pizzas
@@ -207,6 +212,11 @@ function carregaListaPizzas() {
                 //remove a despesa
                 bd.remover(id)
 
+                //
+                let quant = p.quant
+                quant = parseInt(quant)
+                decrementaBadge(quant)
+
                 //atualiza a pagina
                 window.location.reload()
             }
@@ -282,6 +292,16 @@ function carregaListaPizzas() {
 
 }
 
+function carregaBadge() {
+    
+    let badge = bd.recuperarBadge()
+    console.log(badge)
+
+    document.getElementById('badge-cont').innerHTML = badge
+}
+
+carregaBadge()
+
 function incrementaBadge(quant) {
     let badge = document.getElementById('badge-cont').innerHTML
 
@@ -297,14 +317,11 @@ function decrementaBadge(quant) {
     let badge = document.getElementById('badge-cont').innerHTML
 
     badge = parseInt(badge)
-    if(badge >= 1) {
-        badge -= quant
-    }
+    badge -= quant
 
     document.getElementById('badge-cont').innerHTML = badge
+
+    bd.gravarBadge(badge)
 }
-
-
-
 
 
