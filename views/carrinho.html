@@ -20,9 +20,13 @@
 
     <!-- Logo da barra de enderecos do navegador -->
     <link rel="icon" href="../public/images/logo.png">
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+
 </head>
 
-<body>
+<body onload="carregaListaPizzas()">
 
     <header>
         <!-- inicio CABECALHO-->
@@ -98,66 +102,20 @@
                                 <th></th>
                             </thead>
 
-                            <tbody>
-
-                                <!-- produto 1 -->
-                                <tr>
-                                    <td class="td-img">
-                                        <!-- imagem -->
-                                        <img class="img-fluid" src="../public/images/calabresa.png" alt="Calabresa">
-                                    </td>
-                                    <td>
-                                        <!-- descricao -->
-                                        <h5>Pizza de Calabresa</h5>
-                                        <p>Calabresa, mussarela e cebola</p>
-                                    </td>
-                                     <!-- preco -->
-                                    <td>G - R$ 39,99</td>
-                                    <td>
-                                        <!-- quant -->
-                                        1
-                                    </td>
-                                    <td>
-                                        <!-- remover -->
-                                        <button class="btn btn-danger btn">
-                                            <span>Remover do carrinho</span>
-                                            <i class="fas fa-trash-alt"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-
+                            <tbody id="lista_pizzas">
+                                
                             </tbody>
 
                             <!-- total -->
-                            <tr>
-                                <td colspan="2"></td>
-                                <td>
-                                    <h4>Total</h4>
-                                </td>
-                                <td colspan="1"></td>
-                                <td>
-                                    <h3>R$ 79,98</h3>
-                                </td>
+                            <tr id="linha_total">
+
                             </tr>
 
                             <!-- botoes -->
-                            <tr>
-                                <td>
-                                    <button class="btn btn-success">
-                                        <span>Comprar mais</span>
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                </td>
-                                <td colspan="3"></td>
-                                <td>
-                                    <button class="btn btn-primary">
-                                        <span>Finalizar a compra</span>
-                                        <i class="fas fa-check"></i>
-                                    </button>
-                                </td>
+                            <tr id="linha_botoes">
+
                             </tr>
 
-                            </tbody>
                         </table>
                     </div>
 
@@ -199,8 +157,5 @@
     <!--/fim RODAPE -->
 
 </body>
-
-<!-- Javascript -->
-<script src="script.js"></script>
 
 </html>
