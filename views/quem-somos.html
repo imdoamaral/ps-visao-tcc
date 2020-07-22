@@ -21,9 +21,12 @@
     <!-- Logo da barra de enderecos do navegador -->
     <link rel="icon" href="../public/images/logo.png">
 
+    <!-- Javascript -->
+    <script src="script.js"></script>
+
 </head>
 
-<body>
+<body onload="carregaBadge()">
 
     <header>
         <!-- inicio CABECALHO-->
@@ -65,7 +68,7 @@
                         <li class="nav-item">
                             <a href="carrinho.html" class="nav-link">
                                 <i class="fas fa-shopping-cart fa-lg"></i>
-                                <span class="badge badge-secondary">0</span>
+                                <span id="badge-cont" class="badge badge-secondary">0</span>
                             </a>
                         </li>
     
