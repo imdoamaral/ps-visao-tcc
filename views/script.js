@@ -71,6 +71,10 @@ class Bd {
         }
         return pizzas
     }
+
+    remover(id) {
+        localStorage.removeItem(id)
+    }
 }
 
 let bd = new Bd()
@@ -194,6 +198,18 @@ function carregaListaPizzas() {
 
             btn.className = 'btn btn-danger'
             btn.innerHTML = '<i class="fas fa-trash-alt"></i>'+' Remover do carrinho'
+            btn.id = `id_pizza_${p.id}`
+
+            btn.onclick = function() {
+                //elimina os caracteres 'id_pizza_' deixando apenas o valor de p.id
+                let id = btn.id.replace('id_pizza_', '')
+
+                //remove a despesa
+                bd.remover(id)
+
+                //atualiza a pagina
+                window.location.reload()
+            }
 
             linha.insertCell(4).append(btn)
     })
@@ -249,7 +265,7 @@ function carregaListaPizzas() {
     //botao 'comprar mais'
     let btn_comprarMais = document.createElement('a')
     btn_comprarMais.className = 'btn btn-success'
-    btn_comprarMais.href = '#'
+    btn_comprarMais.href = 'cardapio.html'
     btn_comprarMais.role = 'button'
     btn_comprarMais.innerHTML = 'Comprar mais '+'<i class="fas fa-shopping-cart"></i>'
     linhaBotoes.insertCell(0).append(btn_comprarMais)
