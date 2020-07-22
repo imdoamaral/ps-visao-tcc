@@ -323,5 +323,3 @@ function decrementaBadge(quant) {
 
     bd.gravarBadge(badge)
 }
-
-
