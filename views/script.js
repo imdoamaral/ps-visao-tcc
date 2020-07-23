@@ -297,7 +297,6 @@ function carregaListaPizzas() {
 function carregaBadge() {
     
     let badge = bd.recuperarBadge()
-    console.log(badge)
 
     document.getElementById('badge-cont').innerHTML = badge
 }
