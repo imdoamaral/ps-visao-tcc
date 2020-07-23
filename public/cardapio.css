@@ -87,6 +87,10 @@ nav.navbar-transparente{
     margin: 12px 15px;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #CB2636;
+}
+
 /* Home
 ----------------------------*/
 .capa{
@@ -120,7 +124,7 @@ nav.navbar-transparente{
 
 #home .link-cardapio:hover {
     text-decoration: none;
-    color: #CB2636
+    color: #CB2636;
 }
 
 .link-cardapio {
@@ -130,7 +134,7 @@ nav.navbar-transparente{
     text-transform: uppercase;
 }
 
-#tipo_cardapio {
+#tipo_cardapio:hover {
     border-left: 5px solid #CB2636;
 }
 
