@@ -287,6 +287,9 @@ function carregaListaPizzas() {
     btn_finalizarCompra.className = 'btn btn-primary'
     btn_finalizarCompra.href = '#'
     btn_finalizarCompra.innerHTML = 'Finalizar a compra '+'<i class="fas fa-check"></i>'
+    btn_finalizarCompra.onclick = function() {
+        alert('Esta funcinalidade estará disponível em breve!')
+    }
     
     linhaBotoes.insertCell(2).append(btn_finalizarCompra)
 
