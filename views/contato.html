@@ -24,6 +24,19 @@
     <!-- Javascript -->
     <script src="script.js"></script>
 
+    <script>
+
+        function exibeMensagem() {
+            let f = document.getElementById('form_contato')
+            console.log(f.checkValidity())
+
+            if(f.checkValidity() == true) { 
+                alert('Mensagem enviada!')
+            }
+        }
+
+    </script>
+
 </head>
 
 <body onload="carregaBadge()">
@@ -100,7 +113,7 @@
 
                 <div class="col-md-8">
 
-                    <form action="">
+                    <form id="form_contato" action="">
                         <div class="form-row">
                             <div class="col-md-6 form-group">
                                 <input type="text" class="form-control" placeholder="Seu nome" required>
@@ -123,7 +136,7 @@
                         </div>
     
                         <div class="form-group">
-                            <button type="submit" class="btn btn-success btn">
+                            <button onclick="exibeMensagem()" type="submit" class="btn btn-success btn">
                                 Enviar
                                 <i class="fas fa-check fa-sm"></i>
                             </button>
