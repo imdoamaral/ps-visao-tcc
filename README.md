@@ -1,6 +1,6 @@
 ## Prévia
 
-<img src="public/images/screenshot.png">
+<img src="public/images/print-600p-min.png">
 
 # ps_visao_tcc 🍕🍔
 Projeto realizado no processo seletivo da Visão Tecnologia e Sistemas (2020).

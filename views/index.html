@@ -14,24 +14,28 @@
     <script src="https://kit.fontawesome.com/fdb2e39f6f.js" crossorigin="anonymous"></script>
 
     <!-- Estilo customizado -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../public/styles.css">
 
     <title> Home - Mais Sabor</title>
 
     <!-- Logo da barra de enderecos do navegador -->
-    <link rel="icon" href="/images/logo.png">
+    <link rel="icon" href="../public/images/logo.png">
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+    
 </head>
 
-<body>
+<body onload="carregaBadge()">
 
     <header>
         <!-- inicio CABECALHO-->
-        <nav class="navbar navbar-light navbar-expand-md fixed-top bg-vermelho navbar-transparente shadow">
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-vermelho navbar-transparente shadow">
             <div class="container">
     
                 <!-- logo -->
-                <a href="#" class="navbar-brand">
-                    <img src="/images/logo.png" width="100">
+                <a href="index.html" class="navbar-brand">
+                    <img src="../public/images/logo.png" width="100">
                 </a>
     
                 <!-- menu hamburguer -->
@@ -41,33 +45,49 @@
     
                 <!-- menu navegacao -->
                 <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav mr-auto">
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Cardápio
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="cardapio.html">Menu</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="pizzas.html">Pizzas</a>
+                              <a class="dropdown-item disabled" href="#">Hamburguer</a>
+                              <a class="dropdown-item disabled" href="#">Álcool</a>
+                              <a class="dropdown-item disabled" href="#">Tabaco</a>
+                            </div>
+                        </li>
+    
+                    </ul>
+
                     <ul class="navbar-nav ml-auto">
-    
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/">Home</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a class="nav-link" href="/quem_somos">Quem Somos</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contato">Contato</a>
-                        </li>
-    
-                        <li class="nav-item divisor"></li><!-- divisor -->
-    
-                        <li class="nav-item">
-                            <a href="/cardapio" class="nav-link">Cardápio</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a href="" class="nav-link">
-                                <i class="fas fa-shopping-cart fa-lg"></i>
-                                <span class="badge badge-secondary">0</span>
+
+                        <li class="nav-item" style="padding-right: 8px;">
+                            <a href="login.html" class="nav-link btn btn-outline-light">
+                                Olá, faça seu login!
                             </a>
                         </li>
-    
+                        
+                        <li class="nav-item divisor"></li>
+
+                        <li class="nav-item">
+                            <a href="carrinho.html" class="nav-link">
+                                <i class="fas fa-shopping-cart fa-lg"></i> Carrinho
+                                <span id="badge-cont" class="badge badge-secondary"></span>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
     
@@ -85,7 +105,7 @@
                 <div class="col-md-12">
 
                     <div class="d-none d-md-block" style="margin-bottom: 50px;">
-                        <img src="/images/logo.png" width="45%">
+                        <img src="../public/images/logo.png" width="45%">
                     </div>
 
                     <div class="d-block d-sm-none">
@@ -99,7 +119,7 @@
                         </h1>
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-custom bg-vermelho">
+                    <a href="cardapio.html" class="btn btn-lg btn-custom bg-vermelho">
                         FAZER PEDIDO
                     </a>
 
@@ -151,7 +171,7 @@
                     <h2 class="text-vermelho">O que o nosso restaurante tem?</h2>
 
                     <span>
-                        <img src="images/red-header-seprator.png" alt="">
+                        <img src="../public/images/red-header-seprator.png" alt="">
                     </span>
 
                     <br><br><br>
@@ -183,7 +203,7 @@
             <h1 id="clientes">Veja o que dizem nossos clientes!</h1>
 
             <div class="text-center pb-5 d-none d-md-block">
-                <img src="images/red-header-seprator.png" alt="">
+                <img src="../public/images/red-header-seprator.png" alt="">
             </div>
 
             <div class="row">
@@ -255,7 +275,42 @@
     </section>
     <!--/fim DEPOIMENTOS -->
     
-    <%- include ('partials/footer.ejs') %>
+    <footer id="rodape">
+        <!-- inicio RODAPE -->
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-md-8">
+                    <span class="text-white-50 d-none d-md-block" style="font-size: 0.9em;">
+                        &copy; 2020 - Equipe TCC (Todos Contra o Corona)
+                    </span>
+                </div>
+    
+                <div class="col-md-4 d-flex justify-content-end">
+                    <a href="#">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="#" class="ml-2">
+                        <i class="fab fa-twitter fa-lg cor-principal"></i>
+                    </a>
+                    <a href="#" class="ml-2">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="#" class="ml-2">
+                        <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/fim RODAPE -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
