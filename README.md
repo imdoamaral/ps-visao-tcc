@@ -7,25 +7,13 @@ Projeto realizado no processo seletivo da Visão Tecnologia e Sistemas (2020).
 
 ## Como executar 🤔
 ```
-> Abra o projeto
-> Ctrl + '
-> npm install
-> npm run dev
+> Aqui mesmo nessa página, vá em Code -> Download  ZIP
+> Extrair o conteúdo
+> Entrar na pasta "Views"
+> Abrir o index.html
 ```
-
-## Feito com
-* [Visual Studio Code](https://code.visualstudio.com/) - Editor de código.
-* [Node.js](https://nodejs.org/en/).
-* [PostgreSQL](https://www.postgresql.org/) - Banco de dados a ser utilizado.
-
-
-## Versões
-VERSÃO 0.0
-* Primeira implementação teste.
 
 ## Autores
 * **Igor Vitor Vieira** - [IgorVVieira](https://github.com/IgorVViera)
 * **Guilherme Lage Albano** - [iamAlbano](https://github.com/iamAlbano)
 * **Israel Matias do Amaral** - [imdoamaral](https://github.com/imdoamaral)
-
-
