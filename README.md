@@ -7,7 +7,7 @@ Projeto realizado no processo seletivo da Visão Tecnologia e Sistemas (2020).
 
 ## Como executar 🤔
 ```
-> Aqui mesmo nessa página, vá em Code -> Download  ZIP
+> Aqui mesmo nessa página, vá em Code -> Download ZIP
 > Extrair o conteúdo
 > Entrar na pasta "Views"
 > Abrir o index.html
