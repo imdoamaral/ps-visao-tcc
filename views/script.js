@@ -145,7 +145,7 @@ function carregaListaPizzas() {
     <tr>
     0 = <td class="td-img">
             <!-- imagem -->
-            <img class="img-fluid" src="../public/images/calabresa.png" alt="Calabresa">
+            <img class="img-fluid" src="images/calabresa.png" alt="Calabresa">
         </td>
     1 = <td>
             <!-- descricao -->

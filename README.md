@@ -1,16 +1,14 @@
 ## Prévia
 
-<img src="public/images/print-600p-min.png">
+<img src="views/images/print-600p-min.png">
 
 # ps-visao-tcc 🍕🍔
 Projeto realizado no processo seletivo da Visão Tecnologia e Sistemas (2020).
 
 ## Como executar 🤔
 ```
-> Aqui mesmo nessa página, vá em Code -> Download ZIP
-> Extrair o conteúdo
-> Entrar na pasta "Views"
-> Abrir o index.html
+> Clone ou baixe este repositório
+> Abra o arquivo index.html em qualquer navegador web
 ```
 
 ## Autores
